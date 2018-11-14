@@ -3,9 +3,11 @@ import org.junit.jupiter.api.Test;
 
 import java.awt.*;
 
+
+
 import static junit.framework.TestCase.assertEquals;
 
-class CarTest {
+ class CarTest {
 
 
     @Test
@@ -13,7 +15,7 @@ class CarTest {
         Car c = new Volvo240();
         Car saab = new Saab95();
 
-        // Test gettters/setters on constructor call,
+        // Test getters/setters on constructor call,
         assertEquals(4, c.getNrDoors());
         assertEquals(2, saab.getNrDoors());
 
@@ -38,65 +40,6 @@ class CarTest {
         c.stopEngine();
         assertEquals(0, c.getCurrentSpeed());
 
-
-    }
-
-    @Test
-    void getNrDoors() {
-
-    }
-
-    @Test
-    void getEnginePower() {
-        Car c = new Saab95();
-
-    }
-
-    @Test
-    void getCurrentSpeed() {
-        Car c = new Volvo240();
-
-    }
-
-    @Test
-    void getColor() {
-        Car c = new Volvo240();
-
-    }
-
-    @Test
-    void getX(){
-        Car c = new Volvo240();
-
-    }
-
-    @Test
-    void getY(){
-        Car c = new Volvo240();
-
-    }
-
-    @Test
-    void getDirection(){
-        Car c = new Volvo240();
-
-    }
-
-    @Test
-    void setColor() {
-        Car c = new Volvo240();
-
-    }
-
-    @Test
-    void startEngine() {
-        Car c = new Volvo240();
-
-    }
-
-    @Test
-    void stopEngine() {
-        Car c = new Volvo240();
 
     }
 
@@ -126,6 +69,15 @@ class CarTest {
     }
 
     @Test
+    void gasTooHigh(){
+        Car c = new Volvo240();
+        c.gas(20);
+        assertEquals(1.25, c.getCurrentSpeed());
+
+    }
+
+
+    @Test
     void turnLeft() {
         Car c = new Volvo240();
         c.turnLeft();
@@ -138,4 +90,9 @@ class CarTest {
         c.turnRight();
         assertEquals(Math.PI / 2, c.getDirection());
     }
+
+//    @Test
+//    void minMax(){
+//        assertEquals( 3, minMax(1, 2, 3));
+//    }
 }
