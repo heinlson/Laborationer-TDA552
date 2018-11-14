@@ -1,5 +1,5 @@
 /**
- * Interface for any object that can be moved and rotated
+ * Interface for an object that can be moved and rotated
  */
 public interface Movable {
     void move();

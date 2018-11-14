@@ -6,42 +6,120 @@ import java.awt.*;
 
 
 import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertTrue;
+import static org.junit.Assert.assertFalse;
 
- class CarTest {
+class CarTest {
+
+
+    private Car c = new Volvo240();
+
+    @Test
+    void getNrDoors(){
+        assertEquals(4, c.getNrDoors());
+    }
+
+    @Test
+    void getEnginePower(){
+        assertEquals(100.0, c.getEnginePower());
+    }
+
+    @Test
+    void getCurrentSpeed(){
+        assertEquals(0.0, c.getCurrentSpeed());
+    }
+
+    @Test
+    void getColor(){
+        assertEquals(Color.black, c.getColor());
+    }
+
+    @Test
+    void getX(){
+        assertEquals(0.0, c.getX());
+    }
+
+    @Test
+    void getY(){
+        assertEquals(0.0, c.getY());
+    }
+
+    @Test
+    void getDirection(){
+        assertEquals(0.0, c.getDirection());
+    }
+
+    @Test
+    void setColor(){
+        c.setColor(Color.red);
+        assertEquals(Color.red, c.getColor());
+    }
+
+    @Test
+    void startEngine(){
+        c.startEngine();
+        assertEquals(0.1, c.getCurrentSpeed());
+    }
+
+    @Test
+    void stopEngine(){
+        c.stopEngine();
+        assertEquals(0.0, c.getCurrentSpeed());
+    }
+
+    @Test
+    void setX(){
+        c.setX(10);
+        assertEquals(10.0, c.getX());
+    }
+
+    @Test
+    void setY(){
+        c.setY(10);
+        assertEquals(10.0, c.getY());
+    }
 
 
     @Test
-    void testEmptyCar(){
-        Car c = new Volvo240();
-        Car saab = new Saab95();
+     void speedFactor() {
+         Volvo240 v = new Volvo240();
+         assertEquals(1.25, v.speedFactor());
 
-        // Test getters/setters on constructor call,
-        assertEquals(4, c.getNrDoors());
-        assertEquals(2, saab.getNrDoors());
+         Saab95 s = new Saab95();
+         assertEquals(1.25, s.speedFactor());
+     }
 
-        assertEquals(125, saab.getEnginePower());
+     @Test
+     void gas() {
+         Volvo240 v = new Volvo240();
+         v.gas(1);
+         assertEquals(1.25, v.getCurrentSpeed());
 
-        assertEquals(0, c.getCurrentSpeed());
+         Saab95 s = new Saab95();
+         s.gas(1);
+         assertEquals(1.25, s.getCurrentSpeed());
+     }
 
-        assertEquals(Color.black, c.getColor());
-
-        assertEquals(0, c.getX());
-
-        assertEquals(0, c.getY());
-
-        assertEquals(0, c.getDirection());
-
-        c.setColor(Color.red);
-        assertEquals(Color.red, c.getColor());
-
-        c.startEngine();
-        assertEquals(0.1, c.getCurrentSpeed());
-
-        c.stopEngine();
-        assertEquals(0, c.getCurrentSpeed());
+     @Test
+     void brake() {
+         Volvo240 v = new Volvo240();
+         v.gas(1);
+         v.brake(1);
+         assertEquals(0.0, v.getCurrentSpeed());
+     }
 
 
-    }
+     @Test
+     void turbo(){
+         Saab95 s = new Saab95();
+         assertFalse(s.isTurboOn());
+
+         s.setTurboOn();
+         assertTrue(s.isTurboOn());
+
+         s.setTurboOff();
+         assertFalse(s.isTurboOn());
+     }
 
 //    @Test
 //    void speedFactor() {

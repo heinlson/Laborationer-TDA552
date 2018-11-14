@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27e11615-3350-4ee5-a646-bebce3f1c7d9" name="Default Changelist" comment="" />
+    <list default="true" id="27e11615-3350-4ee5-a646-bebce3f1c7d9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDA552.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TDA552.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TDA552/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TDA552/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TDA552/CarTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TDA552/CarTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TDA552/Saab95.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TDA552/Saab95.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TDA552/Saab95Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TDA552/Saab95Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TDA552/Volvo240.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TDA552/Volvo240.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TDA552/Volvo240Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TDA552/Volvo240Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Movable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Movable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Saab95Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Volvo240Test.java" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,11 +25,12 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/TDA552___Lab_1$Volvo240Test.ic" NAME="Volvo240Test Coverage Results" MODIFIED="1541758520863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TDA552___Lab_1$All_in_TDA552__2_.ic" NAME="All in TDA552 (2) Coverage Results" MODIFIED="1542232695760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TDA552___Lab_1$CarTest.ic" NAME="CarTest Coverage Results" MODIFIED="1542233224368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TDA552___Lab_1$Saab95Test.ic" NAME="Saab95Test Coverage Results" MODIFIED="1541758871017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/TDA552___Lab_1$CarTest.ic" NAME="CarTest Coverage Results" MODIFIED="1541758503660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="55" />
+    <option name="myElementSize" value="95" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-291007700">
@@ -48,53 +63,68 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="236106415">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="289" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="289" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Car.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="94" selection-start-line="94" selection-end-line="94" />
+            <state relative-caret-position="-17">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Scandia.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="51" column="56" selection-start-line="51" selection-start-column="56" selection-end-line="51" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CarTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
+            <state relative-caret-position="293">
+              <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#983#984#0" expanded="true" />
+                <element signature="e#1030#1031#0" expanded="true" />
+                <element signature="e#966#967#0" expanded="true" />
+                <element signature="e#1021#1022#0" expanded="true" />
+                <element signature="e#1021#1022#0" expanded="true" />
+                <element signature="e#1075#1076#0" expanded="true" />
+                <element signature="e#1067#1068#0" expanded="true" />
+                <element signature="e#1122#1123#0" expanded="true" />
+                <element signature="e#1124#1125#0" expanded="true" />
+                <element signature="e#1165#1166#0" expanded="true" />
+                <element signature="e#1167#1168#0" expanded="true" />
+                <element signature="e#1208#1209#0" expanded="true" />
+                <element signature="e#1210#1211#0" expanded="true" />
+                <element signature="e#1259#1260#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Saab95Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Volvo240Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -135,24 +165,33 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Volvo240Test.java" />
         <option value="$PROJECT_DIR$/src/Saab95Test.java" />
-        <option value="$PROJECT_DIR$/src/CarTest.java" />
         <option value="$PROJECT_DIR$/src/Saab95.java" />
         <option value="$PROJECT_DIR$/src/Volvo240.java" />
         <option value="$PROJECT_DIR$/src/Car.java" />
         <option value="$PROJECT_DIR$/src/Scandia.java" />
+        <option value="$PROJECT_DIR$/src/CarTest.java" />
       </list>
     </option>
   </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1581" />
-    <option name="y" value="-21" />
-    <option name="width" value="3780" />
-    <option name="height" value="1101" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -164,11 +203,11 @@
           <expand>
             <path>
               <item name="TDA552 - Lab 1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TDA552" type="462c0819:PsiDirectoryNode" />
+              <item name="Lab 1 + Lab 2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TDA552 - Lab 1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TDA552" type="462c0819:PsiDirectoryNode" />
+              <item name="Lab 1 + Lab 2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -184,8 +223,10 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542031926705" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaProgramming/Testprojekt DrawPolygons" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542233248634" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -207,7 +248,31 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Saab95Test">
+  <component name="RunManager" selected="JUnit.CarTest">
+    <configuration name="All in TDA552 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TDA552" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in TDA552 (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TDA552" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in TDA552" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TDA552" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CarTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDA552" />
       <option name="PACKAGE_NAME" value="" />
@@ -224,24 +289,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Volvo240Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TDA552" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Volvo240Test" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.CarTest" />
       <item itemvalue="JUnit.Saab95Test" />
-      <item itemvalue="JUnit.Volvo240Test" />
+      <item itemvalue="JUnit.All in TDA552" />
+      <item itemvalue="JUnit.All in TDA552 (1)" />
+      <item itemvalue="JUnit.All in TDA552 (2)" />
+      <item itemvalue="JUnit.CarTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Saab95Test" />
-        <item itemvalue="JUnit.Volvo240Test" />
         <item itemvalue="JUnit.CarTest" />
+        <item itemvalue="JUnit.All in TDA552 (2)" />
+        <item itemvalue="JUnit.All in TDA552 (1)" />
+        <item itemvalue="JUnit.All in TDA552" />
+        <item itemvalue="JUnit.Saab95Test" />
       </list>
     </recent_temporary>
   </component>
@@ -255,25 +316,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541754522775</updated>
+      <workItem from="1542232572236" duration="729000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CarTest - 2018.11.09 at 10h 34m 47s.xml">
-      <configuration name="CarTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Saab95Test - 2018.11.09 at 10h 36m 17s.xml">
-      <configuration name="Saab95Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Saab95Test - 2018.11.09 at 11h 08m 19s.xml">
-      <configuration name="Saab95Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Saab95Test - 2018.11.09 at 11h 09m 19s.xml">
-      <configuration name="Saab95Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Saab95Test - 2018.11.09 at 11h 09m 47s.xml">
-      <configuration name="Saab95Test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CarTest - 2018.11.09 at 11h 15m 13s.xml">
       <configuration name="CarTest" configurationId="JUnit" />
     </history-entry>
@@ -283,21 +330,47 @@
     <history-entry file="Saab95Test - 2018.11.09 at 11h 21m 20s.xml">
       <configuration name="Saab95Test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_TDA552 - 2018.11.14 at 22h 56m 38s.xml">
+      <configuration name="All in TDA552" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_TDA552_(1) - 2018.11.14 at 22h 57m 02s.xml">
+      <configuration name="All in TDA552 (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_TDA552_(2) - 2018.11.14 at 22h 58m 21s.xml">
+      <configuration name="All in TDA552 (2)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_TDA552_(2) - 2018.11.14 at 23h 03m 39s.xml">
+      <configuration name="All in TDA552 (2)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_TDA552_(2) - 2018.11.14 at 23h 04m 33s.xml">
+      <configuration name="All in TDA552 (2)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarTest - 2018.11.14 at 23h 07m 09s.xml">
+      <configuration name="CarTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarTest - 2018.11.14 at 23h 07m 31s.xml">
+      <configuration name="CarTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="729000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1292" height="700" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2540453" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25692964" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32924694" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3253796" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -305,6 +378,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32924694" />
+      <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -313,45 +387,17 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" visible="true" weight="0.25" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Ferrari.java" />
-    <entry file="file://$PROJECT_DIR$/src/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="94" selection-start-line="94" selection-end-line="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CarTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Saab95Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Volvo240Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Movable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -366,6 +412,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/junit/framework/TestCase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="185" column="48" selection-start-line="185" selection-start-column="48" selection-end-line="185" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Volvo240Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Volvo240.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -375,15 +435,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Scandia.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
+        <state relative-caret-position="568">
           <caret line="51" column="56" selection-start-line="51" selection-start-column="56" selection-end-line="51" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Saab95Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CarTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
           <folding>
-            <element signature="e#118#119#0" expanded="true" />
-            <element signature="e#151#152#0" expanded="true" />
-            <element signature="e#60#61#0" expanded="true" />
-            <element signature="e#80#81#0" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#983#984#0" expanded="true" />
+            <element signature="e#1030#1031#0" expanded="true" />
+            <element signature="e#966#967#0" expanded="true" />
+            <element signature="e#1021#1022#0" expanded="true" />
+            <element signature="e#1021#1022#0" expanded="true" />
+            <element signature="e#1075#1076#0" expanded="true" />
+            <element signature="e#1067#1068#0" expanded="true" />
+            <element signature="e#1122#1123#0" expanded="true" />
+            <element signature="e#1124#1125#0" expanded="true" />
+            <element signature="e#1165#1166#0" expanded="true" />
+            <element signature="e#1167#1168#0" expanded="true" />
+            <element signature="e#1208#1209#0" expanded="true" />
+            <element signature="e#1210#1211#0" expanded="true" />
+            <element signature="e#1259#1260#0" expanded="true" />
           </folding>
         </state>
       </provider>
