@@ -1,28 +1,27 @@
 import java.awt.*;
-import java.util.Stack;
 
 public class CarTransport extends Car {
 
-    private int maxSize;
+
     private boolean flatbedOpen = false;
     private Truck truck;
+    private final CarContainer carStorage;
 
-    private final Stack<Car> cars = new Stack<>();
 
     /**
-     * Creates a car transport with the given max number of cars and color
+     * Creates a car transport with the given max number of carStorage and color
      * @param c the color of the car
-     * @param maxSize the max amount of cars in the car transport
+     * @param maxSize the max amount of carStorage in the car transport
      */
     public CarTransport(Color c, int maxSize) {
         super(2, 200, Color.orange, "Car transport");
         truck = new Truck(2, 200, c, "Car transport");
-        this.maxSize = maxSize;
+        carStorage = new CarContainer(maxSize);
     }
 
     /**
-     * Creates a car transport with the given max number of cars
-     * @param maxSize the max amount of cars in the car transport
+     * Creates a car transport with the given max number of carStorage
+     * @param maxSize the max amount of carStorage in the car transport
      */
     public CarTransport(int maxSize) {
         this(Color.orange, maxSize);
@@ -34,8 +33,8 @@ public class CarTransport extends Car {
      */
     public void addCar(Car c) {
         double distance = Math.sqrt(Math.pow(getX() - c.getX(), 2) + Math.pow(getY() - c.getY(), 2));
-        if (cars.size() < maxSize && distance <= 2 && flatbedOpen && c != this) {
-            cars.push(c);
+        if (carStorage.size() < carStorage.getMaxSize() && distance <= 2 && flatbedOpen && c != this) {
+            carStorage.push(c);
         }
     }
 
@@ -44,7 +43,7 @@ public class CarTransport extends Car {
      */
     public void removeCar() {
         if (flatbedOpen) {
-            Car c = cars.pop();
+            Car c = carStorage.pop();
             c.setX(getX() + 2);
             c.setY(getY() + 2);
         }
@@ -81,12 +80,12 @@ public class CarTransport extends Car {
 
     /**
      * {@inheritDoc}
-     * Also updates positions of all cars on the transporter
+     * Also updates positions of all carStorage on the transporter
      */
     @Override
     public void move() {
         super.move();
-        for (Car c : cars) {
+        for (Car c : carStorage.getCars()) {
             c.setX(getX());
             c.setY(getY());
         }
