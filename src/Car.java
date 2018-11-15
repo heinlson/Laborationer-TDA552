@@ -5,7 +5,7 @@ import java.awt.*;
  * Contains a variables for doors, color, speed, engine power, rotation, and x- and y-position
  * Has methods to create, turn, move, accelerate, brake, and get/set some of the instance variables
  */
-public abstract class Car implements Movable {
+public abstract class Car implements IMovable {
     private int nrDoors; // Number of doors on the car
     private double enginePower; // Engine power of the car
     private double currentSpeed; // The current speed of the car
