@@ -167,6 +167,35 @@ class CarTest {
         assertEquals(Math.PI / 2, c.getDirection());
     }
 
+
+    Scandia s = new Scandia();
+
+    @Test
+    void raiseFlatbed(){
+
+        s.raiseFlatbed(10);
+        assertEquals(10.0, s.getFlatbedAngle());
+    }
+
+    @Test
+    void lowerFlatbed(){
+        s.lowerFlatbed(20);
+        assertEquals(0, s.getFlatbedAngle());
+    }
+
+    @Test
+    void scaniaSpeedFactor(){
+        assertEquals(0.75, s.speedFactor());
+    }
+
+    @Test
+    void failMoveScania(){
+        s.raiseFlatbed(10);
+        Point p = new Point((int) s.getX(),(int) s.getY());
+        s.move();
+        assertEquals(p, new Point((int) s.getX(),(int) s.getY()));
+    }
+
 //    @Test
 //    void minMax(){
 //        assertEquals( 3, minMax(1, 2, 3));
