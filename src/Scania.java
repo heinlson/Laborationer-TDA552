@@ -3,9 +3,6 @@ import java.awt.*;
 public class Scania extends Truck {
 
 
-
-
-
     /**
      * Empty constructor
      */
@@ -22,11 +19,18 @@ public class Scania extends Truck {
         super(2, 150, c, "Scania");
     }
 
-    @Override
-    double speedFactor(){
-        return getEnginePower() * 0.005;
+
+    public void raiseFlatbed(double degrees){
+        getFlatbed().raiseFlatbed(degrees, this);
     }
 
+    /**
+     *
+     * @param degrees
+     */
+    public void lowerFlatbed(double degrees){
+        getFlatbed().lowerFlatbed(degrees, this);
+    }
 
 
 

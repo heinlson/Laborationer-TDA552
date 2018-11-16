@@ -4,10 +4,9 @@ public abstract class Truck extends Car {
 
     private final Flatbed flatbed = new Flatbed();
 
-    protected Truck(int nrDoors, double enginePower, Color color, String modelName) {
+    public Truck(int nrDoors, double enginePower, Color color, String modelName) {
         super(nrDoors, enginePower, color, modelName);
     }
-
 
     /**
      *  {@inheritDoc}
@@ -21,30 +20,10 @@ public abstract class Truck extends Car {
     }
 
 
-    /**
-     *
-     * @return
-     */
-    public boolean getFlatbedOpen(){
-        return flatbed.getFlatbedOpen();
+    @Override
+    double speedFactor() {
+        return getEnginePower() * 0.005;
     }
-
-    /**
-     *
-     * @param degrees
-     */
-    public void raiseFlatbed(double degrees){
-        flatbed.raiseFlatbed(degrees, this);
-    }
-
-    /**
-     *
-     * @param degrees
-     */
-    public void lowerFlatbed(double degrees){
-        flatbed.lowerFlatbed(degrees, this);
-    }
-
 
     /**
      *
@@ -54,13 +33,22 @@ public abstract class Truck extends Car {
         return flatbed.getFlatbedAngle();
     }
 
+    /**
+     *
+     * @return
+     */
+    public boolean getFlatbedOpen(){
+        return flatbed.getFlatbedOpen();
+    }
 
-    protected Flatbed getFlatBed(){
+
+    protected Flatbed getFlatbed(){
         return flatbed;
+    }
 }
 
 
 
 
 
-}
+

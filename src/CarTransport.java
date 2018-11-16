@@ -26,12 +26,12 @@ public class CarTransport extends Truck {
 
     /**
      * Adds a car to the transporter if it is not full
-     * @param c the car to be added to the flatbed
+     * @param car the car to be added to the flatbed
      */
-    public void addCar(Car c) {
-        double distance = Math.sqrt(Math.pow(getX() - c.getX(), 2) + Math.pow(getY() - c.getY(), 2));
-        if (carStorage.size() < carStorage.getMaxSize() && distance <= 2 && getFlatBed().getFlatbedOpen() && c != this) {
-            carStorage.push(c);
+    public void addCar(Car car) {
+        double distance = Math.sqrt(Math.pow(getX() - car.getX(), 2) + Math.pow(getY() - car.getY(), 2));
+        if (carStorage.size() < carStorage.getMaxSize() && distance <= 2 && getFlatbedOpen() && car != this) {
+            carStorage.push(car);
         }
     }
 
@@ -39,7 +39,7 @@ public class CarTransport extends Truck {
      * Removes the last car from the transporter
      */
     public Car removeCar() {
-        if (getFlatBed().getFlatbedOpen()) {
+        if (getFlatbedOpen()) {
             Car c = carStorage.pop();
             c.setX(getX() + 2);
             c.setY(getY() + 2);
@@ -50,23 +50,19 @@ public class CarTransport extends Truck {
 
 
 
-    @Override
-    double speedFactor() {
-        return getEnginePower() * 0.005;
-    }
 
     /**
      * If car is not moving, raises the flatbed to where it is open, returns flatbed state
      */
     public void raiseFlatbed() {
-        getFlatBed().raiseFlatbed(40, this);
+        getFlatbed().raiseFlatbed(40, this);
     }
 
     /**
      * If car is not moving, lowers the flatbed to where it is closed, returns flatbed state
      */
     public void lowerFlatbed() {
-        getFlatBed().lowerFlatbed(40, this);
+        getFlatbed().lowerFlatbed(40, this);
 
     }
 
@@ -76,7 +72,6 @@ public class CarTransport extends Truck {
      */
     @Override
     public void move() {
-
         super.move();
         for (Car c : carStorage.getCars()) {
             c.setX(getX());
