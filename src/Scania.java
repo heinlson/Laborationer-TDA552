@@ -1,11 +1,15 @@
 import java.awt.*;
 
-public class Scandia extends Truck {
+public class Scania extends Truck {
+
+
+
+
 
     /**
      * Empty constructor
      */
-    public Scandia(){
+    public Scania(){
         this(Color.white);
     }
 
@@ -14,14 +18,22 @@ public class Scandia extends Truck {
      * Creates a Scania with a given color
      * @param c the color of the Scania
      */
-    public Scandia(Color c){
-        super(2, 150, c, "Scandia");
+    public Scania(Color c){
+        super(2, 150, c, "Scania");
     }
 
     @Override
     double speedFactor(){
         return getEnginePower() * 0.005;
     }
+
+
+
+
+
+
+
+
 
 
 }

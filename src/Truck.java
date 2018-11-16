@@ -1,27 +1,13 @@
 import java.awt.*;
 
-public class Truck extends Car {
-    private double flatbedAngle;
+public abstract class Truck extends Car {
+
+    private final Flatbed flatbed = new Flatbed();
 
     protected Truck(int nrDoors, double enginePower, Color color, String modelName) {
         super(nrDoors, enginePower, color, modelName);
     }
 
-    /**
-     * Gets the angle of the flatbed (in degrees)
-     * @return the degrees of the angle
-     */
-    public double getFlatbedAngle() {
-        return flatbedAngle;
-    }
-
-    protected void setFlatbedAngle(double flatbedAngle) {
-        this.flatbedAngle = flatbedAngle;
-    }
-
-    double speedFactor() {
-        return 0;
-    }
 
     /**
      *  {@inheritDoc}
@@ -29,28 +15,52 @@ public class Truck extends Car {
      */
     @Override
     public void move(){
-        if(flatbedAngle == 0){
+        if(flatbed.getFlatbedAngle() == 0){
             super.move();
         }
     }
 
+
     /**
-     * Raises the flatbed by amount
-     * @param amount number of degrees to raise the flatbed
+     *
+     * @return
      */
-    public void raiseFlatbed(double amount){
-        if(amount + flatbedAngle <= 70 && amount > 0 && getCurrentSpeed() == 0){
-            flatbedAngle += amount;
-        }
+    public boolean getFlatbedOpen(){
+        return flatbed.getFlatbedOpen();
     }
 
     /**
-     * Lowers the flatbed by amount
-     * @param amount number of degrees to lower the flatbed
+     *
+     * @param degrees
      */
-    public void lowerFlatbed(double amount){
-        if(flatbedAngle - amount >= 0 && amount > 0){
-            flatbedAngle -= amount;
-        }
+    public void raiseFlatbed(double degrees){
+        flatbed.raiseFlatbed(degrees, this);
     }
+
+    /**
+     *
+     * @param degrees
+     */
+    public void lowerFlatbed(double degrees){
+        flatbed.lowerFlatbed(degrees, this);
+    }
+
+
+    /**
+     *
+     * @return
+     */
+    public double getFlatbedAngle(){
+        return flatbed.getFlatbedAngle();
+    }
+
+
+    protected Flatbed getFlatBed(){
+        return flatbed;
+}
+
+
+
+
+
 }

@@ -168,7 +168,7 @@ class CarTest {
     }
 
 
-    Scandia s = new Scandia();
+    Scania s = new Scania();
 
     @Test
     void raiseFlatbed(){
@@ -195,6 +195,48 @@ class CarTest {
         s.move();
         assertEquals(p, new Point((int) s.getX(),(int) s.getY()));
     }
+
+    CarTransport ct = new CarTransport(1);
+
+
+    @Test
+    void addCar(){
+        ct.raiseFlatbed();
+        ct.addCar(c);
+        assertEquals(c, ct.removeCar());
+    }
+
+    @Test
+    void removeCar(){
+        ct.raiseFlatbed();
+        ct.addCar(c);
+        assertEquals(c, ct.removeCar());
+    }
+
+    @Test
+    void raiseFlatbedCT(){
+        ct.lowerFlatbed();
+        ct.raiseFlatbed();
+        assertTrue(ct.getFlatbedOpen());
+    }
+
+    @Test
+    void lowerFlatbedCT(){
+        ct.raiseFlatbed();
+        ct.lowerFlatbed();
+        assertFalse(ct.getFlatbedOpen());
+    }
+
+    @Test
+    void moveCT(){
+        ct.raiseFlatbed();
+        ct.addCar(c);
+        ct.lowerFlatbed();
+        ct.move();
+    }
+
+
+
 
 //    @Test
 //    void minMax(){

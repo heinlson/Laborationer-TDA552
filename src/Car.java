@@ -124,7 +124,7 @@ import java.awt.*;
 
     /**
      * Increases speed by 0-100% of the speed factor
-     * @param amount a value that gets mapped between 0 and 1 using the sigmoid function
+     * @param amount a value that gets mapped between 0 and 1
      */
     public void gas(double amount){
         incrementSpeed(minMax(amount, 0, 1));
@@ -132,7 +132,7 @@ import java.awt.*;
 
     /**
      * Decreases speed by 0-100% of the speed factor
-     * @param amount a value that gets mapped between 0 and 1 using the sigmoid function
+     * @param amount a value that gets mapped between 0 and 1
      */
     public void brake(double amount){
         decrementSpeed(minMax(amount, 0, 1));

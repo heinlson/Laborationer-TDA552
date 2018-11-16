@@ -1,10 +1,8 @@
 import java.awt.*;
 
-public class CarTransport extends Car {
+public class CarTransport extends Truck {
 
 
-    private boolean flatbedOpen = false;
-    private Truck truck;
     private final CarContainer carStorage;
 
 
@@ -14,8 +12,7 @@ public class CarTransport extends Car {
      * @param maxSize the max amount of carStorage in the car transport
      */
     public CarTransport(Color c, int maxSize) {
-        super(2, 200, Color.orange, "Car transport");
-        truck = new Truck(2, 200, c, "Car transport");
+        super(2, 200, c, "Car transport");
         carStorage = new CarContainer(maxSize);
     }
 
@@ -33,7 +30,7 @@ public class CarTransport extends Car {
      */
     public void addCar(Car c) {
         double distance = Math.sqrt(Math.pow(getX() - c.getX(), 2) + Math.pow(getY() - c.getY(), 2));
-        if (carStorage.size() < carStorage.getMaxSize() && distance <= 2 && flatbedOpen && c != this) {
+        if (carStorage.size() < carStorage.getMaxSize() && distance <= 2 && getFlatBed().getFlatbedOpen() && c != this) {
             carStorage.push(c);
         }
     }
@@ -41,41 +38,36 @@ public class CarTransport extends Car {
     /**
      * Removes the last car from the transporter
      */
-    public void removeCar() {
-        if (flatbedOpen) {
+    public Car removeCar() {
+        if (getFlatBed().getFlatbedOpen()) {
             Car c = carStorage.pop();
             c.setX(getX() + 2);
             c.setY(getY() + 2);
+            return c;
         }
+        return null;
     }
 
-    /**
-     * Gets whether or not the flatbed is open
-     * @return the openness of the flatbed
-     */
-    public boolean getFlatbedOpen() {
-        return flatbedOpen;
-    }
+
 
     @Override
     double speedFactor() {
-        return truck.getEnginePower() * 0.005;
+        return getEnginePower() * 0.005;
     }
 
     /**
-     * Raises the flatbed to a predetermined amount
+     * If car is not moving, raises the flatbed to where it is open, returns flatbed state
      */
     public void raiseFlatbed() {
-        flatbedOpen = true;
-        truck.raiseFlatbed(40);
+        getFlatBed().raiseFlatbed(40, this);
     }
 
     /**
-     * Lowers the flatbed to where it is closed
+     * If car is not moving, lowers the flatbed to where it is closed, returns flatbed state
      */
     public void lowerFlatbed() {
-        flatbedOpen = false;
-        truck.lowerFlatbed(40);
+        getFlatBed().lowerFlatbed(40, this);
+
     }
 
     /**
@@ -84,11 +76,14 @@ public class CarTransport extends Car {
      */
     @Override
     public void move() {
+
         super.move();
         for (Car c : carStorage.getCars()) {
             c.setX(getX());
             c.setY(getY());
         }
     }
+
+
 
 }
