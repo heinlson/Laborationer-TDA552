@@ -30,17 +30,18 @@ public class CarTransport extends Truck {
      */
     public void addCar(Car car) {
         double distance = Math.sqrt(Math.pow(getX() - car.getX(), 2) + Math.pow(getY() - car.getY(), 2));
-        if (carStorage.size() < carStorage.getMaxSize() && distance <= 2 && getFlatbedOpen() && car != this) {
-            carStorage.push(car);
+        if (distance <= 2 && getFlatbedOpen()) {
+            carStorage.add(car, this);
         }
     }
 
     /**
-     * Removes the last car from the transporter
+     * Removes the Last car from the transporter
+     * @return the car that was removed
      */
     public Car removeCar() {
         if (getFlatbedOpen()) {
-            Car c = carStorage.pop();
+            Car c = carStorage.remove(carStorage.size() - 1);
             c.setX(getX() + 2);
             c.setY(getY() + 2);
             return c;
