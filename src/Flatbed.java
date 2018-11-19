@@ -1,5 +1,6 @@
 public class Flatbed {
 
+
     private double flatbedAngle;
     private boolean flatbedOpen = false;
 

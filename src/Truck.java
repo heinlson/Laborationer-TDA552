@@ -26,15 +26,15 @@ public abstract class Truck extends Car {
     }
 
     /**
-     *
-     * @return
+     * Gets the current angles of the flatbed of the object
+     * @return the angle of the flatbed
      */
     public double getFlatbedAngle(){
         return flatbed.getFlatbedAngle();
     }
 
     /**
-     *
+     * Returns whether the flatbed is open (usable) or closed (not useable).
      * @return
      */
     public boolean getFlatbedOpen(){
