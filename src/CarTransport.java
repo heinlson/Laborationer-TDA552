@@ -3,7 +3,7 @@ import java.awt.*;
 public class CarTransport extends Truck {
 
 
-    private final CarContainer carStorage;
+    private final CarContainer<Car> carStorage;
 
 
     /**
@@ -13,7 +13,7 @@ public class CarTransport extends Truck {
      */
     public CarTransport(Color c, int maxSize) {
         super(2, 200, c, "Car transport");
-        carStorage = new CarContainer(maxSize);
+        carStorage = new CarContainer<>(maxSize);
     }
 
     /**
@@ -39,7 +39,7 @@ public class CarTransport extends Truck {
 
     /**
      * Removes the Last car from the transporter
-     * @return the car that was removed
+     * @return the car that was removed, throws NullPointerException if flatbed is closed
      */
     public Car removeCar() {
         if (getFlatbedOpen()) {
@@ -58,8 +58,6 @@ public class CarTransport extends Truck {
     public int getMaxSize(){
         return carStorage.getMaxSize();
     }
-
-
 
 
     /**

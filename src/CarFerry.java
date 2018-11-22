@@ -29,7 +29,7 @@ public class CarFerry extends Vehicle{
 
     /**
      * Removes the First car on the file of the ferry that was specified
-     * @return the car that was removed, returns null if removing from a file that does not exist
+     * @return the car that was removed, throws a IndexOutOfBoundsException if removing from a file that does not exist
      */
     public Car removeCarInFile(int file){
         if(file >= 0 && file < carFiles.size()){
