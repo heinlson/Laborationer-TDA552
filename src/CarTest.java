@@ -3,14 +3,15 @@ import org.junit.jupiter.api.Test;
 
 import java.awt.*;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 class CarTest {
 
 
     private Car c = new Volvo240();
+    Scania s = new Scania();
+    CarTransport ct = new CarTransport(1);
+    CarFerry cf = new CarFerry(3, 2, "Ferry");
 
     @Test
     void getNrDoors(){
@@ -51,6 +52,11 @@ class CarTest {
     void setColor(){
         c.setColor(Color.red);
         assertEquals(Color.red, c.getColor());
+    }
+
+    @Test
+    void getMaxSize(){
+        assertEquals(1, ct.getMaxSize());
     }
 
     @Test
@@ -168,7 +174,7 @@ class CarTest {
     }
 
 
-    Scania s = new Scania();
+
 
     @Test
     void raiseFlatbed(){
@@ -196,7 +202,7 @@ class CarTest {
         assertEquals(p, new Point((int) s.getX(),(int) s.getY()));
     }
 
-    CarTransport ct = new CarTransport(1);
+
 
 
     @Test
@@ -229,12 +235,39 @@ class CarTest {
 
     @Test
     void moveCT(){
+        Car c = new Volvo240();
         ct.raiseFlatbed();
         ct.addCar(c);
         ct.lowerFlatbed();
+        Point p = new Point((int) c.getX(), (int) c.getY());
         ct.move();
+        ct.raiseFlatbed();
+        Car e = ct.removeCar();
+        assertNotEquals(p, new Point((int) e.getX(), (int) e.getY()));
     }
 
+    @Test
+    void removeCarInFile(){
+        cf.addCar(c, 1);
+        Car e = cf.removeCarInFile(1);
+        assertEquals(c, e);
+    }
+
+    @Test
+    void removeCarInFileException(){
+        try{
+            cf.removeCarInFile(100);
+        }
+        catch (IndexOutOfBoundsException e){
+            assertEquals("File does not exist, cannot remove car", e.getMessage());
+        }
+    }
+
+    @Test
+    void cfSpeedFactor(){
+        cf.gas(1);
+        assertEquals(2.25, cf.getCurrentSpeed());
+    }
 
 
 

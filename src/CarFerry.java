@@ -7,13 +7,24 @@ public class CarFerry extends Vehicle{
     private final List<CarContainer> carFiles = new ArrayList<>();
 
 
-    public CarFerry(int storageSize, int noOfFiles, double enginePower, Color color, String modelName){
-        super(enginePower, color, modelName);
+    /**
+     * A ferry that can carry cars, has multiple files to store cars in
+     * @param storageSize the maximum number of cars in each file
+     * @param noOfFiles the number of car files on the Ferry
+     * @param modelName the model of the Ferry
+     */
+    public CarFerry(int storageSize, int noOfFiles, String modelName){
+        super(225, Color.orange, modelName);
 
 
         for(int i = 0; i < noOfFiles; i++){
             carFiles.add(new CarContainer(storageSize));
         }
+    }
+
+    @Override
+    double speedFactor(){
+        return getEnginePower() * 0.01;
     }
 
     /**
@@ -24,7 +35,7 @@ public class CarFerry extends Vehicle{
         if(file >= 0 && file < carFiles.size()){
             return carFiles.get(file).remove(0);
         }
-        return null;
+        throw new IndexOutOfBoundsException("File does not exist, cannot remove car");
 
     }
 
@@ -33,7 +44,9 @@ public class CarFerry extends Vehicle{
      * @param car that will be added
      */
     public void addCar(Car car, int file){
-        carFiles.get(file).add(car, this);
+        if(file >= 0 && file < carFiles.size()){
+            carFiles.get(file).add(car, this);
+        }
     }
 
 

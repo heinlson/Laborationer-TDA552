@@ -31,6 +31,8 @@ public class CarTransport extends Truck {
     public void addCar(Car car) {
         double distance = Math.sqrt(Math.pow(getX() - car.getX(), 2) + Math.pow(getY() - car.getY(), 2));
         if (distance <= 2 && getFlatbedOpen()) {
+            car.setX(getX());
+            car.setY(getY());
             carStorage.add(car, this);
         }
     }
@@ -46,7 +48,15 @@ public class CarTransport extends Truck {
             c.setY(getY() + 2);
             return c;
         }
-        return null;
+        throw new NullPointerException("Flatbed is closed, cannot remove car");
+    }
+
+    /**
+     * Get the max number of cars that can be stored in the car transport
+     * @return the max number of cars
+     */
+    public int getMaxSize(){
+        return carStorage.getMaxSize();
     }
 
 

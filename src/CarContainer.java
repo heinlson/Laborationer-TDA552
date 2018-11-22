@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class CarContainer {
+class CarContainer {
 
     private int maxSize;
     private final List<Car> cars = new ArrayList<>();
@@ -45,8 +45,6 @@ public class CarContainer {
         if(cars.size() < maxSize && c != current){
             cars.add(c);
         }
-
-
     }
 
 //    /**

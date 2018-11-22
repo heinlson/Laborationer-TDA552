@@ -26,9 +26,9 @@ public class Flatbed {
      * Raises the flatbed by amount, to a maximum
      * @param amount number of degrees to raise the flatbed
      */
-    public void raiseFlatbed(double amount, Car c){
+    public void raiseFlatbed(double amount, Car self){
         // Kan bara ändras om inte speed
-        if(c.getCurrentSpeed() == 0){
+        if(self.getCurrentSpeed() == 0){
             if(amount + flatbedAngle <= 70 && amount > 0){
                 flatbedAngle += amount;
             }

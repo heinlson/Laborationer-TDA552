@@ -27,47 +27,16 @@ import java.awt.*;
 
 
 
-    abstract double speedFactor();
-
-    private void incrementSpeed(double amount){
-        setCurrentSpeed(minMax(getCurrentSpeed() + speedFactor() * amount, 0, getEnginePower()));
-    }
-
-    private void decrementSpeed(double amount){
-        setCurrentSpeed(minMax(getCurrentSpeed() - speedFactor() * amount, 0, getEnginePower()));
-    }
-
-    /**
-     * Increases speed by 0-100% of the speed factor
-     * @param amount a value that gets mapped between 0 and 1
-     */
-    public void gas(double amount){
-        incrementSpeed(minMax(amount, 0, 1));
-    }
-
-    /**
-     * Decreases speed by 0-100% of the speed factor
-     * @param amount a value that gets mapped between 0 and 1
-     */
-    public void brake(double amount){
-        decrementSpeed(minMax(amount, 0, 1));
-    }
-
-    /**
-     * Increases/decreases the x- and y-position according to the current speed and rotation
-     */
 
 
-    /**
-     * Floors values of x larger than max and ciels (increases) values of x smaller than min.
-     * @param x evaluated parameter, possible returned floored or cieled.
-     * @param min minimum value of x.
-     * @param max maximum value of x.
-     * @return Either x, min or max. Depending on value of x.
-     */
-    private double minMax(double x, double min, double max) {
-        return Math.max(Math.min(max, x), min);
-    }
+
+
+
+
+
+
+
+
 
 
     // private double sigmoid(double x) {
