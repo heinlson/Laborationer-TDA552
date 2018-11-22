@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 import java.util.List;
 
-class CarContainer {
+class CarContainer<T extends Car> {
 
     private int maxSize;
-    private final List<Car> cars = new ArrayList<>();
+    private final List<T> cars = new ArrayList<>();
 
 
 //    /**
@@ -32,7 +32,7 @@ class CarContainer {
 //    /**
 //     * @return a "list" containing the cars in the container
 //     */
-    List<Car> getCars() {
+    List<T> getCars() {
         return cars;
     }
 
@@ -41,7 +41,7 @@ class CarContainer {
 //     * @param c the car that will be added
 //     * @param current
 //     */
-    void add(Car c, Object current){
+    void add(T c, Object current){
         if(cars.size() < maxSize && c != current){
             cars.add(c);
         }
@@ -51,7 +51,7 @@ class CarContainer {
 //     * Removes the car at the last place of the list
 //     * @return the car that was removed
 //     */
-    Car remove(int internalIndex){
+    T remove(int internalIndex){
         return cars.remove(internalIndex);
     }
 }
