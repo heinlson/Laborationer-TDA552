@@ -1,15 +1,23 @@
-public class Flatbed {
+class Flatbed {
 
 
     private double flatbedAngle;
     private boolean flatbedOpen = false;
+    private final Vehicle self;
 
+    /**
+     * A flatbed attached to a vehicle, can be raised or lowered
+     * @param self the vehicle that has said flatbed
+     */
+    Flatbed(Vehicle self){
+        this.self = self;
+    }
 
     /**
      * Gets the angle of the flatbed (in degrees)
      * @return the degrees of the angle
      */
-    public double getFlatbedAngle() {
+    double getFlatbedAngle() {
         return flatbedAngle;
     }
 
@@ -17,7 +25,7 @@ public class Flatbed {
      * Gets whether or not the flatbed is open
      * @return the openness of the flatbed
      */
-    public boolean getFlatbedOpen() {
+    boolean getFlatbedOpen() {
         return flatbedOpen;
     }
 
@@ -26,8 +34,7 @@ public class Flatbed {
      * Raises the flatbed by amount, to a maximum
      * @param amount number of degrees to raise the flatbed
      */
-    public void raiseFlatbed(double amount, Car self){
-        // Kan bara ändras om inte speed
+    void raiseFlatbed(double amount){
         if(self.getCurrentSpeed() == 0){
             if(amount + flatbedAngle <= 70 && amount > 0){
                 flatbedAngle += amount;
@@ -48,9 +55,8 @@ public class Flatbed {
      * Lowers the flatbed by amount, to a minimum of zero, does not lower if car is not moving
      * @param amount number of degrees to lower the flatbed
      */
-    public void lowerFlatbed(double amount, Car c){
-        // Kan bara ändras om inte speed
-        if(c.getCurrentSpeed() == 0){
+    void lowerFlatbed(double amount){
+        if(self.getCurrentSpeed() == 0){
             if(flatbedAngle - amount >= 0 && amount > 0){
                 flatbedAngle -= amount;
             }

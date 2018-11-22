@@ -64,14 +64,14 @@ public class CarTransport extends Truck {
      * If car is not moving, raises the flatbed to where it is open, returns flatbed state
      */
     public void raiseFlatbed() {
-        getFlatbed().raiseFlatbed(40, this);
+        getFlatbed().raiseFlatbed(40);
     }
 
     /**
      * If car is not moving, lowers the flatbed to where it is closed, returns flatbed state
      */
     public void lowerFlatbed() {
-        getFlatbed().lowerFlatbed(40, this);
+        getFlatbed().lowerFlatbed(40);
 
     }
 

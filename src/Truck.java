@@ -2,7 +2,7 @@ import java.awt.*;
 
 public abstract class Truck extends Car {
 
-    private final Flatbed flatbed = new Flatbed();
+    private final Flatbed flatbed = new Flatbed(this);
 
     protected Truck(int nrDoors, double enginePower, Color color, String modelName) {
         super(nrDoors, enginePower, color, modelName);
@@ -35,7 +35,7 @@ public abstract class Truck extends Car {
 
     /**
      * Returns whether the flatbed is open (usable) or closed (not useable).
-     * @return
+     * @return a boolean of true (open) or false (closed)
      */
     public boolean getFlatbedOpen(){
         return flatbed.getFlatbedOpen();

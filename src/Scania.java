@@ -25,7 +25,7 @@ public class Scania extends Truck {
      * @param degrees that the flatbed will be lowered by
      */
     public void raiseFlatbed(double degrees){
-        getFlatbed().raiseFlatbed(degrees, this);
+        getFlatbed().raiseFlatbed(degrees);
     }
 
 
@@ -34,7 +34,7 @@ public class Scania extends Truck {
      * @param degrees that the flatbed will be lowered by
      */
     public void lowerFlatbed(double degrees){
-        getFlatbed().lowerFlatbed(degrees, this);
+        getFlatbed().lowerFlatbed(degrees);
     }
 
 

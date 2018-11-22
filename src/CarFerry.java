@@ -4,7 +4,7 @@ import java.util.List;
 
 public class CarFerry extends Vehicle{
 
-    private final List<CarContainer> carFiles = new ArrayList<>();
+    private final List<CarContainer<Car>> carFiles = new ArrayList<>();
 
 
     /**
@@ -18,7 +18,7 @@ public class CarFerry extends Vehicle{
 
 
         for(int i = 0; i < noOfFiles; i++){
-            carFiles.add(new CarContainer(storageSize));
+            carFiles.add(new CarContainer<>(storageSize));
         }
     }
 
@@ -30,6 +30,7 @@ public class CarFerry extends Vehicle{
     /**
      * Removes the First car on the file of the ferry that was specified
      * @return the car that was removed, throws a IndexOutOfBoundsException if removing from a file that does not exist
+     * @param file the file where a car should be removed from (first in - first out)
      */
     public Car removeCarInFile(int file){
         if(file >= 0 && file < carFiles.size()){
@@ -42,6 +43,7 @@ public class CarFerry extends Vehicle{
     /**
      * Adds a car to the ferry
      * @param car that will be added
+     * @param file the file a car should be added to
      */
     public void addCar(Car car, int file){
         if(file >= 0 && file < carFiles.size()){

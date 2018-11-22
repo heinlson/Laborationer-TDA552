@@ -28,7 +28,9 @@
       <change beforePath="$PROJECT_DIR$/out/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/package-frame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/package-summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CarContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CarFerry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarFerry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Flatbed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Flatbed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Truck.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,7 +49,7 @@
     <SUITE FILE_PATH="coverage/TDA552___Lab_1$CarTest_moveCT.ic" NAME="CarTest.moveCT Coverage Results" MODIFIED="1542889372016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TDA552___Lab_1$All_in_TDA552__2_.ic" NAME="All in TDA552 (2) Coverage Results" MODIFIED="1542232695760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TDA552___Lab_1$CarTest_removeCarInFile.ic" NAME="CarTest.removeCarInFile Coverage Results" MODIFIED="1542889919684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/TDA552___Lab_1$CarTest.ic" NAME="CarTest Coverage Results" MODIFIED="1542890618828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TDA552___Lab_1$CarTest.ic" NAME="CarTest Coverage Results" MODIFIED="1542910657737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TDA552___Lab_1$CarTest_removeCarInFileException.ic" NAME="CarTest.removeCarInFileException Coverage Results" MODIFIED="1542890236612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TDA552___Lab_1$Saab95Test.ic" NAME="Saab95Test Coverage Results" MODIFIED="1541758871017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
@@ -100,13 +102,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="7409" />
+          <entry key="java" value="8067" />
           <entry key="txt" value="119" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7409" />
+          <entry key="JAVA" value="8067" />
           <entry key="PLAIN_TEXT" value="119" />
         </counts>
       </usages-collector>
@@ -138,9 +140,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Flatbed.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state>
               <folding>
+                <element signature="e#207#208#0" expanded="true" />
+                <element signature="e#239#240#0" expanded="true" />
+                <element signature="e#423#424#0" expanded="true" />
                 <element signature="e#457#458#0" expanded="true" />
               </folding>
             </state>
@@ -163,8 +167,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Truck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="187">
+              <caret line="37" column="57" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
               <folding>
                 <element signature="e#918#919#0" expanded="true" />
                 <element signature="e#965#966#0" expanded="true" />
@@ -185,8 +189,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CarFerry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="31" column="75" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
+            <state relative-caret-position="68">
+              <caret line="32" column="84" selection-start-line="32" selection-start-column="84" selection-end-line="32" selection-end-column="84" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -210,15 +214,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CarContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="52" selection-end-column="9" />
+            <state relative-caret-position="51">
+              <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#357#358#0" expanded="true" />
                 <element signature="e#395#396#0" expanded="true" />
                 <element signature="e#618#619#0" expanded="true" />
                 <element signature="e#648#649#0" expanded="true" />
-                <marker date="1542891665847" expanded="true" signature="1057:1173" ph="..." />
+                <marker date="1542892685582" expanded="true" signature="1168:1276" ph="..." />
               </folding>
             </state>
           </provider>
@@ -283,14 +287,14 @@
         <option value="$PROJECT_DIR$/src/IMovable.java" />
         <option value="$PROJECT_DIR$/src/Scania.java" />
         <option value="$PROJECT_DIR$/src/Vechicle.java" />
-        <option value="$PROJECT_DIR$/src/Flatbed.java" />
         <option value="$PROJECT_DIR$/src/CarTest.java" />
         <option value="$PROJECT_DIR$/src/Vehicle.java" />
-        <option value="$PROJECT_DIR$/src/Truck.java" />
         <option value="$PROJECT_DIR$/src/Car.java" />
-        <option value="$PROJECT_DIR$/src/CarFerry.java" />
         <option value="$PROJECT_DIR$/src/CarTransport.java" />
         <option value="$PROJECT_DIR$/src/CarContainer.java" />
+        <option value="$PROJECT_DIR$/src/Truck.java" />
+        <option value="$PROJECT_DIR$/src/CarFerry.java" />
+        <option value="$PROJECT_DIR$/src/Flatbed.java" />
       </list>
     </option>
   </component>
@@ -338,7 +342,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/alexa/Dropbox/TDA552/Lab 1 + Lab 2/src/Car.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542892583357" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542910654534" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -362,7 +366,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CarTest.getColor">
+  <component name="RunManager" selected="JUnit.CarTest">
     <configuration name="CarTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDA552" />
       <option name="PACKAGE_NAME" value="" />
@@ -420,8 +424,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CarTest.getColor" />
         <item itemvalue="JUnit.CarTest" />
+        <item itemvalue="JUnit.CarTest.getColor" />
         <item itemvalue="JUnit.CarTest.cfSpeedFactor" />
         <item itemvalue="JUnit.CarTest.removeCarInFileException" />
         <item itemvalue="JUnit.CarTest.removeCarInFile" />
@@ -445,7 +449,7 @@
       <workItem from="1542652431797" duration="4440000" />
       <workItem from="1542704356120" duration="1534000" />
       <workItem from="1542708386864" duration="1500000" />
-      <workItem from="1542887878703" duration="4023000" />
+      <workItem from="1542887878703" duration="4675000" />
     </task>
     <task id="LOCAL-00001" summary="More effective code =&gt; more tests">
       <created>1542233348907</created>
@@ -538,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542892485168</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Did stuff">
+      <created>1542892696368</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1542892696368</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -574,13 +585,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18242000" />
+    <option name="totallyTimeSpent" value="18894000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1292" height="692" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2855987" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2855987" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -589,7 +600,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28774422" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28774422" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39786857" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -682,27 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Flatbed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#457#458#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Truck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="e#918#919#0" expanded="true" />
-            <element signature="e#965#966#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Scania.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -742,12 +732,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Truck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="37" column="57" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
+          <folding>
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#965#966#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/CarFerry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="31" column="75" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
+        <state relative-caret-position="68">
+          <caret line="32" column="84" selection-start-line="32" selection-start-column="84" selection-end-line="32" selection-end-column="84" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Flatbed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#239#240#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -765,15 +778,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CarContainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="52" selection-end-column="9" />
+        <state relative-caret-position="51">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#357#358#0" expanded="true" />
             <element signature="e#395#396#0" expanded="true" />
             <element signature="e#618#619#0" expanded="true" />
             <element signature="e#648#649#0" expanded="true" />
-            <marker date="1542891665847" expanded="true" signature="1057:1173" ph="..." />
+            <marker date="1542892685582" expanded="true" signature="1168:1276" ph="..." />
           </folding>
         </state>
       </provider>
