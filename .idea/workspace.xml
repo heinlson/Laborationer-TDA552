@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27e11615-3350-4ee5-a646-bebce3f1c7d9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/CarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CarView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DrawObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DrawPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/Car.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/Car.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/Saab95.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/Saab95.html" afterDir="false" />
@@ -28,9 +32,13 @@
       <change beforePath="$PROJECT_DIR$/out/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/package-frame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/package-summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TDA552/CarTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TDA552/CarTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CarContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarContainer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CarFerry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarFerry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Flatbed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Flatbed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CarTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarTransport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Truck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vehicle.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,18 +51,19 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/TDA552___Lab_1$CarTest_move.ic" NAME="CarTest.move Coverage Results" MODIFIED="1542969793838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TDA552___Lab_1$CarTest_getColor.ic" NAME="CarTest.getColor Coverage Results" MODIFIED="1542890695336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TDA552___Lab_1$CarTest_cfSpeedFactor.ic" NAME="CarTest.cfSpeedFactor Coverage Results" MODIFIED="1542890462211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TDA552___Lab_1$Volvo240Test.ic" NAME="Volvo240Test Coverage Results" MODIFIED="1541758520863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TDA552___Lab_1$CarTest_moveCT.ic" NAME="CarTest.moveCT Coverage Results" MODIFIED="1542889372016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TDA552___Lab_1$All_in_TDA552__2_.ic" NAME="All in TDA552 (2) Coverage Results" MODIFIED="1542232695760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TDA552___Lab_1$CarTest_removeCarInFile.ic" NAME="CarTest.removeCarInFile Coverage Results" MODIFIED="1542889919684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/TDA552___Lab_1$CarTest.ic" NAME="CarTest Coverage Results" MODIFIED="1542910657737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TDA552___Lab_1$CarTest.ic" NAME="CarTest Coverage Results" MODIFIED="1542969754356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TDA552___Lab_1$CarTest_removeCarInFileException.ic" NAME="CarTest.removeCarInFileException Coverage Results" MODIFIED="1542890236612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TDA552___Lab_1$Saab95Test.ic" NAME="Saab95Test Coverage Results" MODIFIED="1541758871017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="49" />
+    <option name="myElementSize" value="47" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-291007700">
@@ -90,38 +99,42 @@
     <session id="236106415">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.25" value="2" />
-          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.32" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="8067" />
+          <entry key="java" value="10145" />
           <entry key="txt" value="119" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8067" />
+          <entry key="JAVA" value="10145" />
           <entry key="PLAIN_TEXT" value="119" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="6" />
-          <entry key="java" value="21" />
+          <entry key="java" value="39" />
+          <entry key="jpg" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="6" />
-          <entry key="JAVA" value="21" />
+          <entry key="Image" value="1" />
+          <entry key="JAVA" value="39" />
         </counts>
       </usages-collector>
     </session>
@@ -129,24 +142,38 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Car.java">
+        <entry file="file://$PROJECT_DIR$/src/CarController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+            <state relative-caret-position="507">
+              <caret line="86" selection-start-line="86" selection-end-line="86" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/CarView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="91" column="14" selection-start-line="91" selection-start-column="14" selection-end-line="91" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2300#2301#0" expanded="true" />
+                <element signature="e#2386#2387#0" expanded="true" />
+                <element signature="e#3692#3693#0" expanded="true" />
+                <element signature="e#3743#3744#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Flatbed.java">
+        <entry file="file://$PROJECT_DIR$/src/Car.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#207#208#0" expanded="true" />
-                <element signature="e#239#240#0" expanded="true" />
-                <element signature="e#423#424#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -154,75 +181,43 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Vehicle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="133" column="20" selection-start-line="133" selection-start-column="20" selection-end-line="133" selection-end-column="20" />
+            <state relative-caret-position="177">
+              <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
               <folding>
-                <element signature="e#1831#1832#0" expanded="true" />
-                <element signature="e#1863#1864#0" expanded="true" />
+                <element signature="e#1982#1983#0" expanded="true" />
+                <element signature="e#2008#2009#0" expanded="true" />
+                <element signature="e#2045#2046#0" expanded="true" />
+                <element signature="e#2071#2072#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Truck.java">
+        <entry file="file://$PROJECT_DIR$/src/DrawPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="37" column="57" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
-              <folding>
-                <element signature="e#918#919#0" expanded="true" />
-                <element signature="e#965#966#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Scania.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CarFerry.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="32" column="84" selection-start-line="32" selection-start-column="84" selection-end-line="32" selection-end-column="84" />
+            <state relative-caret-position="337">
+              <caret line="57" column="57" selection-start-line="57" selection-start-column="57" selection-end-line="57" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2105#2106#0" expanded="true" />
+                <element signature="e#2131#2132#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CarTransport.java">
+        <entry file="file://$PROJECT_DIR$/src/DrawObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="42" column="7" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
-              <folding>
-                <element signature="e#1609#1610#0" expanded="true" />
-                <element signature="e#1655#1656#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/CarContainer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            <state relative-caret-position="459">
+              <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#357#358#0" expanded="true" />
-                <element signature="e#395#396#0" expanded="true" />
-                <element signature="e#618#619#0" expanded="true" />
-                <element signature="e#648#649#0" expanded="true" />
-                <marker date="1542892685582" expanded="true" signature="1168:1276" ph="..." />
+                <element signature="e#188#189#0" expanded="true" />
+                <element signature="e#216#217#0" expanded="true" />
+                <element signature="e#247#248#0" expanded="true" />
+                <element signature="e#275#276#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -231,24 +226,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CarTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+            <state relative-caret-position="190">
+              <caret line="201" column="34" selection-start-line="201" selection-start-column="34" selection-end-line="201" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#969#970#0" expanded="true" />
-                <element signature="e#999#1000#0" expanded="true" />
-                <element signature="e#3383#3384#0" expanded="true" />
-                <element signature="e#3434#3435#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Volvo240.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -267,6 +249,7 @@
     <findStrings>
       <find>public</find>
       <find>override</find>
+      <find>setX</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -285,16 +268,21 @@
         <option value="$PROJECT_DIR$/src/ITruck.java" />
         <option value="$PROJECT_DIR$/src/Scandia.java" />
         <option value="$PROJECT_DIR$/src/IMovable.java" />
-        <option value="$PROJECT_DIR$/src/Scania.java" />
         <option value="$PROJECT_DIR$/src/Vechicle.java" />
-        <option value="$PROJECT_DIR$/src/CarTest.java" />
-        <option value="$PROJECT_DIR$/src/Vehicle.java" />
         <option value="$PROJECT_DIR$/src/Car.java" />
-        <option value="$PROJECT_DIR$/src/CarTransport.java" />
-        <option value="$PROJECT_DIR$/src/CarContainer.java" />
-        <option value="$PROJECT_DIR$/src/Truck.java" />
-        <option value="$PROJECT_DIR$/src/CarFerry.java" />
         <option value="$PROJECT_DIR$/src/Flatbed.java" />
+        <option value="$PROJECT_DIR$/src/Scania.java" />
+        <option value="$PROJECT_DIR$/src/CarTransport.java" />
+        <option value="$PROJECT_DIR$/src/Truck.java" />
+        <option value="$PROJECT_DIR$/src/CarContainer.java" />
+        <option value="$PROJECT_DIR$/src/CarFerry.java" />
+        <option value="$PROJECT_DIR$/src/CarTest.java" />
+        <option value="$PROJECT_DIR$/src/Point.java" />
+        <option value="$PROJECT_DIR$/src/Vehicle.java" />
+        <option value="$PROJECT_DIR$/src/DrawObject.java" />
+        <option value="$PROJECT_DIR$/src/DrawPanel.java" />
+        <option value="$PROJECT_DIR$/src/CarView.java" />
+        <option value="$PROJECT_DIR$/src/CarController.java" />
       </list>
     </option>
   </component>
@@ -315,6 +303,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -332,7 +322,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -342,7 +331,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/alexa/Dropbox/TDA552/Lab 1 + Lab 2/src/Car.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542910654534" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542981128274" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -366,7 +355,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CarTest">
+  <component name="RunManager" selected="Application.CarController">
+    <configuration name="CarController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CarController" />
+      <module name="TDA552" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CarTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDA552" />
       <option name="PACKAGE_NAME" value="" />
@@ -395,21 +391,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarTest.removeCarInFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarTest.move" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDA552" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CarTest" />
-      <option name="METHOD_NAME" value="removeCarInFile" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CarTest.removeCarInFileException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TDA552" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CarTest" />
-      <option name="METHOD_NAME" value="removeCarInFileException" />
+      <option name="METHOD_NAME" value="move" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -417,18 +403,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.CarTest" />
-      <item itemvalue="JUnit.CarTest.removeCarInFile" />
-      <item itemvalue="JUnit.CarTest.removeCarInFileException" />
       <item itemvalue="JUnit.CarTest.cfSpeedFactor" />
       <item itemvalue="JUnit.CarTest.getColor" />
+      <item itemvalue="JUnit.CarTest.move" />
+      <item itemvalue="Application.CarController" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CarController" />
+        <item itemvalue="JUnit.CarTest.move" />
         <item itemvalue="JUnit.CarTest" />
         <item itemvalue="JUnit.CarTest.getColor" />
         <item itemvalue="JUnit.CarTest.cfSpeedFactor" />
-        <item itemvalue="JUnit.CarTest.removeCarInFileException" />
-        <item itemvalue="JUnit.CarTest.removeCarInFile" />
       </list>
     </recent_temporary>
   </component>
@@ -450,6 +436,9 @@
       <workItem from="1542704356120" duration="1534000" />
       <workItem from="1542708386864" duration="1500000" />
       <workItem from="1542887878703" duration="4675000" />
+      <workItem from="1542910593151" duration="98000" />
+      <workItem from="1542963575114" duration="6127000" />
+      <workItem from="1542977097040" duration="3625000" />
     </task>
     <task id="LOCAL-00001" summary="More effective code =&gt; more tests">
       <created>1542233348907</created>
@@ -549,19 +538,17 @@
       <option name="project" value="LOCAL" />
       <updated>1542892696368</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Did stuff">
+      <created>1542910687919</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1542910687919</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CarTest_moveCT - 2018.11.22 at 13h 21m 38s.xml">
-      <configuration name="CarTest.moveCT" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarTest_moveCT - 2018.11.22 at 13h 21m 47s.xml">
-      <configuration name="CarTest.moveCT" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarTest_moveCT - 2018.11.22 at 13h 22m 33s.xml">
-      <configuration name="CarTest.moveCT" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CarTest_moveCT - 2018.11.22 at 13h 23m 08s.xml">
       <configuration name="CarTest.moveCT" configurationId="JUnit" />
     </history-entry>
@@ -583,15 +570,24 @@
     <history-entry file="CarTest_getColor - 2018.11.22 at 13h 45m 12s.xml">
       <configuration name="CarTest.getColor" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CarTest - 2018.11.22 at 19h 17m 48s.xml">
+      <configuration name="CarTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarTest - 2018.11.23 at 11h 39m 47s.xml">
+      <configuration name="CarTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarTest - 2018.11.23 at 11h 42m 51s.xml">
+      <configuration name="CarTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18894000" />
+    <option name="totallyTimeSpent" value="28744000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1292" height="692" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2855987" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29690832" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -600,7 +596,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28774422" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28741866" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39786857" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -618,7 +614,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" visible="true" weight="0.25" />
       <window_info anchor="right" id="Database" order="9" />
     </layout>
   </component>
@@ -664,13 +660,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ITruck.java" />
-    <entry file="file://$PROJECT_DIR$/src/IMovable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Saab95.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-92">
@@ -686,107 +675,179 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scania.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CarTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#969#970#0" expanded="true" />
-            <element signature="e#999#1000#0" expanded="true" />
-            <element signature="e#3383#3384#0" expanded="true" />
-            <element signature="e#3434#3435#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Volvo240.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
+        <state relative-caret-position="272">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Vehicle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="133" column="20" selection-start-line="133" selection-start-column="20" selection-end-line="133" selection-end-column="20" />
-          <folding>
-            <element signature="e#1831#1832#0" expanded="true" />
-            <element signature="e#1863#1864#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Truck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="37" column="57" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
-          <folding>
-            <element signature="e#918#919#0" expanded="true" />
-            <element signature="e#965#966#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CarFerry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="32" column="84" selection-start-line="32" selection-start-column="84" selection-end-line="32" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Flatbed.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="200">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scania.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
           <folding>
-            <element signature="e#207#208#0" expanded="true" />
-            <element signature="e#239#240#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IMovable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Truck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="12" column="72" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CarTransport.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CarFerry.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="42" column="7" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
-            <element signature="e#1609#1610#0" expanded="true" />
-            <element signature="e#1655#1656#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CarContainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        <state relative-caret-position="119">
+          <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#648#649#0" expanded="true" />
-            <marker date="1542892685582" expanded="true" signature="1168:1276" ph="..." />
+            <element signature="e#1698#1699#0" expanded="true" />
+            <element signature="e#1728#1729#0" expanded="true" />
+            <element signature="e#1755#1756#0" expanded="true" />
+            <element signature="e#1785#1786#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+          <folding>
+            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#202#203#0" expanded="true" />
+            <element signature="e#186#187#0" expanded="true" />
+            <element signature="e#212#213#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CarTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="201" column="34" selection-start-line="201" selection-start-column="34" selection-end-line="201" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pics/Saab95.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vehicle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+          <folding>
+            <element signature="e#1982#1983#0" expanded="true" />
+            <element signature="e#2008#2009#0" expanded="true" />
+            <element signature="e#2045#2046#0" expanded="true" />
+            <element signature="e#2071#2072#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_181/src.zip!/java/awt/event/ActionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DrawObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DrawPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="57" column="57" selection-start-line="57" selection-start-column="57" selection-end-line="57" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2105#2106#0" expanded="true" />
+            <element signature="e#2131#2132#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CarController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CarView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="91" column="14" selection-start-line="91" selection-start-column="14" selection-end-line="91" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2300#2301#0" expanded="true" />
+            <element signature="e#2386#2387#0" expanded="true" />
+            <element signature="e#3692#3693#0" expanded="true" />
+            <element signature="e#3743#3744#0" expanded="true" />
           </folding>
         </state>
       </provider>

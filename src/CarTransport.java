@@ -13,7 +13,7 @@ public class CarTransport extends Truck {
      */
     public CarTransport(Color c, int maxSize) {
         super(2, 200, c, "Car transport");
-        carStorage = new CarContainer<>(maxSize);
+        carStorage = new CarContainer<>(maxSize, this);
     }
 
     /**
@@ -31,9 +31,7 @@ public class CarTransport extends Truck {
     public void addCar(Car car) {
         double distance = Math.sqrt(Math.pow(getX() - car.getX(), 2) + Math.pow(getY() - car.getY(), 2));
         if (distance <= 2 && getFlatbedOpen()) {
-            car.setX(getX());
-            car.setY(getY());
-            carStorage.add(car, this);
+            carStorage.add(car);
         }
     }
 
@@ -43,10 +41,7 @@ public class CarTransport extends Truck {
      */
     public Car removeCar() {
         if (getFlatbedOpen()) {
-            Car c = carStorage.remove(carStorage.size() - 1);
-            c.setX(getX() + 2);
-            c.setY(getY() + 2);
-            return c;
+            return carStorage.removeLast();
         }
         throw new NullPointerException("Flatbed is closed, cannot remove car");
     }
@@ -82,10 +77,7 @@ public class CarTransport extends Truck {
     @Override
     public void move() {
         super.move();
-        for (Car c : carStorage.getCars()) {
-            c.setX(getX());
-            c.setY(getY());
-        }
+        carStorage.updatePosition();
     }
 
 

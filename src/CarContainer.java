@@ -5,14 +5,17 @@ class CarContainer<T extends Car> {
 
     private int maxSize;
     private final List<T> cars = new ArrayList<>();
+    private Vehicle self;
 
 
     /**
      * Constructor creating a storage for a specified number of cars
      * @param maxSize is the max number of cars in the container element
+     * @param self the vehicle the container is attached to
      */
-    CarContainer(int maxSize){
+    CarContainer(int maxSize, Vehicle self){
         this.maxSize = maxSize;
+        this.self = self;
     }
 
     /**
@@ -40,21 +43,40 @@ class CarContainer<T extends Car> {
     }
 
     /**
-     * Adds the car to list in the last place
+     * Adds the car to list in the last place, updates the position of the car
      * @param c the car that will be added
-     * @param current
      */
-    void add(T c, Object current){
-        if(cars.size() < maxSize && c != current){
+    void add(T c){
+        if(cars.size() < maxSize && c != self){
+            c.setX(self.getX());
+            c.setY(self.getY());
             cars.add(c);
         }
     }
 
     /**
-     * Removes the car at the last place of the list
+     * Removes the car at the last place of the list and moves it 2 meters from the vehicle
      * @return the car that was removed
      */
-    T remove(int internalIndex){
-        return cars.remove(internalIndex);
+    private T remove(int internalIndex){
+        T c = cars.remove(internalIndex);
+        c.setX(self.getX() + 2);
+        c.setY(self.getY() + 2);
+        return c;
+    }
+
+    T removeFirst(){
+        return remove(0);
+    }
+
+    T removeLast(){
+        return remove(cars.size() - 1);
+    }
+
+    void updatePosition(){
+        for (Car c : cars) {
+            c.setX(self.getX());
+            c.setY(self.getY());
+        }
     }
 }

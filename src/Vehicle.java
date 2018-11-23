@@ -10,7 +10,6 @@ public abstract class Vehicle implements IMovable {
     private double x;
     private double y;
 
-
     protected Vehicle(double enginePower, Color color, String modelName){
         this.enginePower = enginePower;
         this.color = color;
@@ -128,11 +127,11 @@ public abstract class Vehicle implements IMovable {
     abstract double speedFactor();
 
     /**
-     * Increases/decreases the x- and y-position according to the current speed and rotation
+     * Increases/decreases the x- and y-position according to the current speed and rotation, unless it is hindered.
      */
     public void move() {
-        x += Math.cos(direction) * getCurrentSpeed();
-        y += Math.sin(direction) * getCurrentSpeed();
+        setX(getX() + Math.cos(direction) * getCurrentSpeed());
+        setY(getY() + Math.sin(direction) * getCurrentSpeed());
     }
 
     /**

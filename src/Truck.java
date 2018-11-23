@@ -10,7 +10,7 @@ public abstract class Truck extends Car {
 
     /**
      *  {@inheritDoc}
-     *  Furthermore, does not move if flatbed is raised.
+     *  Furthermore, a raised flatbed will hinder the Truck from moving.
      */
     @Override
     public void move(){

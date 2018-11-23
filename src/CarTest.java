@@ -35,11 +35,13 @@ class CarTest {
 
     @Test
     void getX(){
+        Car c = new Volvo240();
         assertEquals(0.0, c.getX());
     }
 
     @Test
     void getY(){
+        Car c = new Volvo240();
         assertEquals(0.0, c.getY());
     }
 
@@ -207,6 +209,7 @@ class CarTest {
 
     @Test
     void addCar(){
+        Car c = new Volvo240();
         ct.raiseFlatbed();
         ct.addCar(c);
         assertEquals(c, ct.removeCar());
@@ -236,6 +239,7 @@ class CarTest {
     @Test
     void moveCT(){
         Car c = new Volvo240();
+        CarTransport ct = new CarTransport(5);
         ct.raiseFlatbed();
         ct.addCar(c);
         ct.lowerFlatbed();
