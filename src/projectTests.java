@@ -5,13 +5,13 @@ import java.awt.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CarTest {
+class projectTests {
 
 
     private Car c = new Volvo240();
-    Scania s = new Scania();
-    CarTransport ct = new CarTransport(1);
-    CarFerry cf = new CarFerry(3, 2, "Ferry");
+    private Scania s = new Scania();
+    private CarTransport ct = new CarTransport(1);
+    private CarFerry cf = new CarFerry(3, 2, "Ferry");
 
     @Test
     void getNrDoors(){
