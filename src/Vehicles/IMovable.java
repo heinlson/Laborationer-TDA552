@@ -1,3 +1,5 @@
+package Vehicles;
+
 /**
  * Interface for an object that can be moved and rotated
  */
@@ -7,6 +9,9 @@ public interface IMovable {
     void turnRight();
 
 
-    double getX();
-    double getY();
+    int getX();
+    int getY();
+
+//    void setX(double x);
+//    void setY(double y);
 }

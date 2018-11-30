@@ -1,3 +1,5 @@
+package Vehicles;
+
 import java.awt.*;
 
 public abstract class Truck extends Car {
@@ -10,7 +12,7 @@ public abstract class Truck extends Car {
 
     /**
      *  {@inheritDoc}
-     *  Furthermore, a raised flatbed will hinder the Truck from moving.
+     *  Furthermore, a raised flatbed will hinder the Vehicles.Truck from moving.
      */
     @Override
     public void move(){
@@ -22,7 +24,7 @@ public abstract class Truck extends Car {
 
     @Override
     double speedFactor() {
-        return getEnginePower() * 0.005;
+        return getEnginePower() * 0.005 * (flatbed.getFlatbedOpen() ? 0 : 1);
     }
 
     /**

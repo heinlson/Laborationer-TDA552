@@ -1,15 +1,17 @@
+package Vehicles;
+
 class Flatbed {
 
 
     private double flatbedAngle;
     private boolean flatbedOpen = false;
-    private final Vehicle self;
+    private final Truck self;
 
     /**
      * A flatbed attached to a vehicle, can be raised or lowered
      * @param self the vehicle that has said flatbed
      */
-    Flatbed(Vehicle self){
+    Flatbed(Truck self){
         this.self = self;
     }
 

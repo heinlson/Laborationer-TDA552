@@ -1,3 +1,5 @@
+package Vehicles;
+
 import java.awt.*;
 
 public class Scania extends Truck {
@@ -12,11 +14,11 @@ public class Scania extends Truck {
 
 
     /**
-     * Creates a Scania with a given color
-     * @param c the color of the Scania
+     * Creates a Vehicles.Scania with a given color
+     * @param c the color of the Vehicles.Scania
      */
     public Scania(Color c){
-        super(2, 150, c, "Scania");
+        super(2, 150, c, "Vehicles.Scania");
     }
 
 

@@ -1,3 +1,8 @@
+import Vehicles.Car;
+import Vehicles.Saab95;
+import Vehicles.Scania;
+import Vehicles.Volvo240;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -31,6 +36,14 @@ public class CarController {
 
         cc.cars.add(new Volvo240());
 
+        Saab95 saab = new Saab95();
+        saab.pointMove(0, 100);
+        cc.cars.add(saab);
+
+        Scania scania = new Scania();
+        scania.pointMove(0, 200);
+        cc.cars.add(scania);
+
         // Start a new view and send a reference of self
         cc.frame = new CarView("CarSim 1.0", cc);
 
@@ -45,12 +58,23 @@ public class CarController {
         public void actionPerformed(ActionEvent e) {
             for (Car car : cars) {
                 car.move();
-                int x = (int) Math.round(car.getX());
-                int y = (int) Math.round(car.getY());
-                frame.drawPanel.moveIt(x, y);
-                // repaint() calls the paintComponent method of the panel
-                frame.drawPanel.repaint();
+                checkEdgeCollision(car);
+//                int x = Math.round(car.getX());
+//                int y = Math.round(car.getY());
+                frame.drawPanel.mapIt(car);
+                // repaint() calls
+                // the paintComponent method of the panel
             }
+            frame.drawPanel.repaint();
+        }
+    }
+
+
+    private void checkEdgeCollision(Car car){
+        if (car.getX() < 0 || car.getX() > CarView.X() ||
+            car.getY() < 0 || car.getY() > CarView.Y()) {
+            car.turnRight();
+            car.turnRight();
         }
     }
 
@@ -72,16 +96,50 @@ public class CarController {
 
     // Turbo on for Saab
     void turboOn(){
-        for(Car c : cars)
-            if(c instanceof Saab95)
+        for(Car c : cars) {
+            if (c instanceof Saab95) {
                 ((Saab95) c).setTurboOn();
+            }
+        }
     }
 
     // Turbo on for Saab
     void turboOff(){
-        for(Car c : cars)
-            if(c instanceof Saab95)
+        for(Car c : cars) {
+            if (c instanceof Saab95) {
                 ((Saab95) c).setTurboOff();
+            }
+        }
+    }
+
+
+    void flatbedUp(){
+        for(Car c : cars) {
+            if (c instanceof Scania) {
+                ((Scania) c).raiseFlatbed(40);
+            }
+        }
+    }
+
+
+    void flatbedDown(){
+        for(Car c : cars) {
+            if (c instanceof Scania) {
+                ((Scania) c).lowerFlatbed(40);
+            }
+        }
+    }
+
+    void startAllEngines() {
+        for (Car c : cars) {
+            c.startEngine();
+        }
+    }
+
+    void stopAllEngines() {
+        for (Car c : cars) {
+            c.stopEngine();
+        }
     }
 
 

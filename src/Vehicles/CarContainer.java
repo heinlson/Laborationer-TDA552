@@ -1,3 +1,5 @@
+package Vehicles;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -48,8 +50,7 @@ class CarContainer<T extends Car> {
      */
     void add(T c){
         if(cars.size() < maxSize && c != self){
-            c.setX(self.getX());
-            c.setY(self.getY());
+            c.pointMove(self.getX(), self.getY());
             cars.add(c);
         }
     }
@@ -60,8 +61,7 @@ class CarContainer<T extends Car> {
      */
     private T remove(int internalIndex){
         T c = cars.remove(internalIndex);
-        c.setX(self.getX() + 2);
-        c.setY(self.getY() + 2);
+        c.pointMove(self.getX() + 2, self.getY() + 2);
         return c;
     }
 
@@ -75,8 +75,7 @@ class CarContainer<T extends Car> {
 
     void updatePosition(){
         for (Car c : cars) {
-            c.setX(self.getX());
-            c.setY(self.getY());
+            c.pointMove(self.getX(), self.getY());
         }
     }
 }

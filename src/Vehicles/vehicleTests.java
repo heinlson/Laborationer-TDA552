@@ -1,3 +1,4 @@
+package Vehicles;
 
 import org.junit.jupiter.api.Test;
 
@@ -5,7 +6,7 @@ import java.awt.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class projectTests {
+class vehicleTests {
 
 
     private Car c = new Volvo240();
@@ -36,13 +37,13 @@ class projectTests {
     @Test
     void getX(){
         Car c = new Volvo240();
-        assertEquals(0.0, c.getX());
+        assertEquals(0, c.getX());
     }
 
     @Test
     void getY(){
         Car c = new Volvo240();
-        assertEquals(0.0, c.getY());
+        assertEquals(0, c.getY());
     }
 
     @Test
@@ -74,15 +75,9 @@ class projectTests {
     }
 
     @Test
-    void setX(){
-        c.setX(10);
-        assertEquals(10.0, c.getX());
-    }
-
-    @Test
-    void setY(){
-        c.setY(10);
-        assertEquals(10.0, c.getY());
+    void pointMove(){
+        c.pointMove(10, 10);
+        assertEquals(10, c.getX());
     }
 
 
@@ -129,13 +124,13 @@ class projectTests {
 
 //    @Test
 //    void speedFactor() {
-//        Volvo240 v = new Volvo240();
+//        Vehicles.Volvo240 v = new Vehicles.Volvo240();
 //        assertEquals(1.25, v.speedFactor());
 //    }
 
 //    @Test
 //    void gas() {
-//        Car c = new Volvo240();
+//        Vehicles.Car c = new Vehicles.Volvo240();
 //        c.gas(1);
 //        assertEquals(1.25, c.getCurrentSpeed());
 //    }
@@ -149,7 +144,7 @@ class projectTests {
         Car c = new Volvo240();
         c.gas(1);
         c.move();
-        assertEquals(c.getCurrentSpeed(), c.getX());
+        assertEquals((int)c.getCurrentSpeed(), c.getX());
     }
 
     @Test
@@ -210,6 +205,7 @@ class projectTests {
     @Test
     void addCar(){
         Car c = new Volvo240();
+        CarTransport ct = new CarTransport(10);
         ct.raiseFlatbed();
         ct.addCar(c);
         assertEquals(c, ct.removeCar());

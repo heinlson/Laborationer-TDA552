@@ -1,3 +1,5 @@
+package Vehicles;
+
 import java.awt.*;
 
 /**
@@ -7,6 +9,7 @@ import java.awt.*;
  */
     public abstract class Car extends Vehicle {
     private int nrDoors; // Number of doors on the car
+
 
 
 

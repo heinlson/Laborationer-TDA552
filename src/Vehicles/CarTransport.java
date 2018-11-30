@@ -1,3 +1,5 @@
+package Vehicles;
+
 import java.awt.*;
 
 public class CarTransport extends Truck {
@@ -5,15 +7,14 @@ public class CarTransport extends Truck {
 
     private final CarContainer<Car> carStorage;
 
-
     /**
      * Creates a car transport with the given max number of carStorage and color
      * @param c the color of the car
      * @param maxSize the max amount of carStorage in the car transport
      */
     public CarTransport(Color c, int maxSize) {
-        super(2, 200, c, "Car transport");
-        carStorage = new CarContainer<>(maxSize, this);
+        super(2, 200, c, "Vehicles.Car transport");
+        carStorage = new CarContainer<Car>(maxSize, this);
     }
 
     /**
@@ -43,7 +44,7 @@ public class CarTransport extends Truck {
         if (getFlatbedOpen()) {
             return carStorage.removeLast();
         }
-        throw new NullPointerException("Flatbed is closed, cannot remove car");
+        throw new NullPointerException("Vehicles.Flatbed is closed, cannot remove car");
     }
 
     /**

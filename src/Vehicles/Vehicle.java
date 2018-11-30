@@ -1,3 +1,5 @@
+package Vehicles;
+
 import java.awt.*;
 
 public abstract class Vehicle implements IMovable {
@@ -7,13 +9,14 @@ public abstract class Vehicle implements IMovable {
     private String modelName; // The car model name
     private Color color; // Color of the car
     private double direction;
-    private double x;
-    private double y;
+    private Point point;
 
     protected Vehicle(double enginePower, Color color, String modelName){
         this.enginePower = enginePower;
         this.color = color;
         this.modelName = modelName;
+
+        point = new Point();
     }
 
 
@@ -64,14 +67,14 @@ public abstract class Vehicle implements IMovable {
     /**
      * Sets the current speed to something greater that 0
      */
-    protected void startEngine(){
+    public void startEngine(){
         currentSpeed = 0.1;
     }
 
     /**
      * Sets the current speed to 0
      */
-    protected void stopEngine(){
+    public void stopEngine(){
         currentSpeed = 0;
     }
 
@@ -79,26 +82,24 @@ public abstract class Vehicle implements IMovable {
      * Gets the x coordinate of the car
      * @return the x coordinate
      */
-    public double getX() {
-        return x;
+    public int getX() {
+        return point.x;
     }
 
     /**
      * Gets the y coordinate of the car
      * @return the y coordinate
      */
-    public double getY() {
-        return y;
+    public int getY() {
+        return point.y;
     }
 
 
-    protected void setX(double x) {
-        this.x = x;
+    public void pointMove(int x, int y) {
+        point.move(x, y);
     }
 
-    protected void setY(double y) {
-        this.y = y;
-    }
+
 
     private void incrementSpeed(double amount){
         setCurrentSpeed(minMax(getCurrentSpeed() + speedFactor() * amount, 0, getEnginePower()));
@@ -130,8 +131,8 @@ public abstract class Vehicle implements IMovable {
      * Increases/decreases the x- and y-position according to the current speed and rotation, unless it is hindered.
      */
     public void move() {
-        setX(getX() + Math.cos(direction) * getCurrentSpeed());
-        setY(getY() + Math.sin(direction) * getCurrentSpeed());
+        pointMove((int)(getX() + Math.cos(direction) * getCurrentSpeed()),
+                (int)(getY() + Math.sin(direction) * getCurrentSpeed()));
     }
 
     /**
