@@ -3,7 +3,7 @@ package Vehicles;
 /**
  * Interface for an object that can be moved and rotated
  */
-public interface IMovable {
+public interface IVehicle {
     void move();
     void turnLeft();
     void turnRight();

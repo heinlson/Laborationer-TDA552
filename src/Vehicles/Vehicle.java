@@ -2,7 +2,7 @@ package Vehicles;
 
 import java.awt.*;
 
-public abstract class Vehicle implements IMovable {
+public abstract class Vehicle implements IVehicle {
 
     private double enginePower; // Engine power of the car
     private double currentSpeed; // The current speed of the car
