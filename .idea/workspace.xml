@@ -5,22 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27e11615-3350-4ee5-a646-bebce3f1c7d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Model/CarObserver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CarApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CarView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DrawPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DrawPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/CarModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/CarModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Vehicles/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Vehicles/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Vehicles/CarContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Vehicles/CarContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Vehicles/CarFerry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Vehicles/CarFerry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Vehicles/CarTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Vehicles/CarTransport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Vehicles/IVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Vehicles/IVehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Vehicles/Saab95.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Vehicles/Saab95.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Vehicles/Scania.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Vehicles/Scania.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Vehicles/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Vehicles/Truck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Vehicles/Volvo240.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Vehicles/Volvo240.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -118,14 +103,14 @@
           <entry key="cs" value="3" />
           <entry key="dummy" value="35" />
           <entry key="java" value="17073" />
-          <entry key="txt" value="301" />
+          <entry key="txt" value="327" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="C#" value="3" />
           <entry key="JAVA" value="17073" />
-          <entry key="PLAIN_TEXT" value="336" />
+          <entry key="PLAIN_TEXT" value="362" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -530,6 +515,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Megavex &lt;42978006+megavex@users.noreply.github.com&gt;" />
+      </list>
+    </option>
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -640,7 +630,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/alexa/Dropbox/TDA552/Lab 1 + Lab 2/src/Car.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544103165066" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544103276637" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -750,7 +740,7 @@
       <workItem from="1543846906093" duration="120000" />
       <workItem from="1543850298883" duration="1290000" />
       <workItem from="1543996393465" duration="1445000" />
-      <workItem from="1544004334053" duration="15120000" />
+      <workItem from="1544004334053" duration="15392000" />
     </task>
     <task id="LOCAL-00001" summary="More effective code =&gt; more tests">
       <created>1542233348907</created>
@@ -906,7 +896,21 @@
       <option name="project" value="LOCAL" />
       <updated>1544091639766</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Före refakturering">
+      <created>1544103079892</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1544103079892</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Före refakturering">
+      <created>1544103275572</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1544103275572</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -942,7 +946,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65013000" />
+    <option name="totallyTimeSpent" value="65285000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1292" height="692" extended-state="6" />
@@ -1023,6 +1027,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="More effective code =&gt; more tests" />
     <MESSAGE value="More better code" />
     <MESSAGE value="More better code, idk what I did tbh" />
@@ -1033,7 +1038,8 @@
     <MESSAGE value="Lab 3 changes" />
     <MESSAGE value="Changes to bad code, made it worse code" />
     <MESSAGE value="Moved CarModel to Model package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved CarModel to Model package" />
+    <MESSAGE value="Före refakturering" />
+    <option name="LAST_COMMIT_MESSAGE" value="Före refakturering" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Ferrari.java" />
