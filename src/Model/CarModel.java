@@ -55,6 +55,11 @@ public class CarModel {
     private void checkEdgeCollision(IVehicle vehicle, int width, int height){
         if (vehicle.getX() < 0 || vehicle.getX() > width ||
                 vehicle.getY() < 0 || vehicle.getY() > height) {
+
+            int newX = Math.min(Math.max(0, vehicle.getX()), width);
+            int newY = Math.min(Math.max(0, vehicle.getY()), height);
+            vehicle.pointMove(newX, newY);
+
             vehicle.turnRight();
             vehicle.turnRight();
         }
