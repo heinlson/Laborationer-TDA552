@@ -51,8 +51,4 @@ class CarFerry extends Vehicle{
             carFiles.get(file).add(car);
         }
     }
-
-
-
-
 }

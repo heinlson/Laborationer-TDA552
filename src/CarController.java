@@ -29,7 +29,7 @@ public class CarController {
         this.model = model;
         // TODO Remove the association from view to controller
         // Start a new view and send a reference of self
-        frame = new CarView("CarSim 1.0", this);
+        frame = new CarView("CarSim 1.0", model);
 
         // Potentially add new Constructor whom can take in a JFrame
 
@@ -67,72 +67,4 @@ public class CarController {
 
     // TODO Flytta nedanstående metoder till model, och refakturera så att
     // TODO koden gör detsamma som just nu (d.v.s ändra i view)
-
-    // Calls the gas method for each car once
-    void gas(int amount) {
-        double percentage = ((double) amount) / 100;
-        for (IVehicle car : model.getCars()) {
-            car.gas(percentage);
-        }
-    }
-
-    // Calls the brake method for each car once
-    void brake(int amount) {
-        double percentage = ((double) amount) / 100;
-        for (IVehicle car : model.getCars()) {
-            car.brake(percentage);
-        }
-    }
-
-    // Turbo on for Saab
-    void turboOn(){
-        for(IVehicle c : model.getCars()) {
-            if (c instanceof Saab95) {
-                ((Saab95) c).setTurboOn();
-            }
-        }
-    }
-
-    // Turbo on for Saab
-    void turboOff(){
-        for(IVehicle c : model.getCars()) {
-            if (c instanceof Saab95) {
-                ((Saab95) c).setTurboOff();
-            }
-        }
-    }
-
-    /**
-     *  Raise flatbed of all Scania cars
-     */
-    void flatbedUp(){
-        for(IVehicle c : model.getCars()) {
-            if (c instanceof Scania) {
-                ((Scania) c).raiseFlatbed(40);
-            }
-        }
-    }
-
-    /**
-     * Lower flatbed of all Scania cars
-     */
-    void flatbedDown(){
-        for(IVehicle c : model.getCars()) {
-            if (c instanceof Scania) {
-                ((Scania) c).lowerFlatbed(40);
-            }
-        }
-    }
-
-    void startAllEngines() {
-        for (IVehicle c : model.getCars()) {
-            c.startEngine();
-        }
-    }
-
-    void stopAllEngines() {
-        for (IVehicle c : model.getCars()) {
-            c.stopEngine();
-        }
-    }
 }

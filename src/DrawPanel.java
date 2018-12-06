@@ -23,8 +23,6 @@ public class DrawPanel extends JPanel {
         // Rememember to rightclick src New -> Package -> name: pics -> MOVE *.jpg to pics.
         // if you are starting in IntelliJ.
         // Linux users need to modify \ to / in path string
-
-
     }
 
     // This method is called each time the panel updates/refreshes/repaints itself
@@ -37,4 +35,6 @@ public class DrawPanel extends JPanel {
             g.drawImage(image, v.getX(), v.getY(), null);
         }
     }
+
+
 }

@@ -1,6 +1,8 @@
 package Model;
 
 import Model.Vehicles.IVehicle;
+import Model.Vehicles.Saab95;
+import Model.Vehicles.Scania;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -77,6 +79,71 @@ public class CarModel {
     }
 
 
+    // Calls the gas method for each car once
+    public void gas(int amount) {
+        double percentage = ((double) amount) / 100;
+        for (IVehicle car : getCars()) {
+            car.gas(percentage);
+        }
+    }
 
+    // Calls the brake method for each car once
+    public void brake(int amount) {
+        double percentage = ((double) amount) / 100;
+        for (IVehicle car : getCars()) {
+            car.brake(percentage);
+        }
+    }
 
+    // Turbo on for Saab
+    public void turboOn(){
+        for(IVehicle c : getCars()) {
+            if (c instanceof Saab95) {
+                ((Saab95) c).setTurboOn();
+            }
+        }
+    }
+
+    // Turbo on for Saab
+    public void turboOff(){
+        for(IVehicle c : getCars()) {
+            if (c instanceof Saab95) {
+                ((Saab95) c).setTurboOff();
+            }
+        }
+    }
+
+    /**
+     *  Raise flatbed of all Scania cars
+     */
+    public void flatbedUp(){
+        for(IVehicle c : getCars()) {
+            if (c instanceof Scania) {
+                ((Scania) c).raiseFlatbed(40);
+            }
+        }
+    }
+
+    /**
+     * Lower flatbed of all Scania cars
+     */
+    public void flatbedDown(){
+        for(IVehicle c : getCars()) {
+            if (c instanceof Scania) {
+                ((Scania) c).lowerFlatbed(40);
+            }
+        }
+    }
+
+    public void startAllEngines() {
+        for (IVehicle c : getCars()) {
+            c.startEngine();
+        }
+    }
+
+    public void stopAllEngines() {
+        for (IVehicle c : getCars()) {
+            c.stopEngine();
+        }
+    }
 }

@@ -1,4 +1,5 @@
 
+import Model.CarModel;
 import Model.CarObserver;
 
 import javax.swing.*;
@@ -20,8 +21,8 @@ public class CarView extends JFrame implements CarObserver {
     private static final int X = 1400;
     private static final int Y = 1100;
 
-    // The controller member
-    CarController carC;
+    // The model member
+    CarModel model;
 
 
     DrawPanel drawPanel;
@@ -44,9 +45,9 @@ public class CarView extends JFrame implements CarObserver {
     JButton stopButton = new JButton("Stop all cars");
 
     // Constructor
-    public CarView(String framename, CarController cc){
-        this.carC = cc;
-        drawPanel = new DrawPanel(X, Y-300, carC.getModel());
+    public CarView(String framename, CarModel model){
+        this.model = model;
+        drawPanel = new DrawPanel(X, Y-300, model);
         initComponents(framename);
 
     }
@@ -110,24 +111,24 @@ public class CarView extends JFrame implements CarObserver {
         gasButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                carC.gas(gasAmount);
+                model.gas(gasAmount);
             }
         });
 
         // model.actionList.add(Brake)
-        brakeButton.addActionListener(/* ActionEvent */ e -> carC.brake(gasAmount));
+        brakeButton.addActionListener(/* ActionEvent */ e -> model.brake(gasAmount));
 
-        turboOnButton.addActionListener(e -> carC.turboOn());
+        turboOnButton.addActionListener(e -> model.turboOn());
 
-        turboOffButton.addActionListener(e -> carC.turboOff());
+        turboOffButton.addActionListener(e -> model.turboOff());
 
-        liftBedButton.addActionListener(e -> carC.flatbedUp());
+        liftBedButton.addActionListener(e -> model.flatbedUp());
 
-        lowerBedButton.addActionListener(e -> carC.flatbedDown());
+        lowerBedButton.addActionListener(e -> model.flatbedDown());
 
-        startButton.addActionListener(e -> carC.startAllEngines());
+        startButton.addActionListener(e -> model.startAllEngines());
 
-        stopButton.addActionListener(e -> carC.stopAllEngines());
+        stopButton.addActionListener(e -> model.stopAllEngines());
 
 
         // Make the frame pack all it's components by respecting the sizes if possible.
@@ -149,5 +150,15 @@ public class CarView extends JFrame implements CarObserver {
     @Override
     public void actOnModelChange() {
         drawPanel.repaint();
+    }
+
+    @Override
+    public int getX() {
+        return X;
+    }
+
+    @Override
+    public int getY() {
+        return Y;
     }
 }

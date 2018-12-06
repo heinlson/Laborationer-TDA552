@@ -3,11 +3,11 @@ package Model.Vehicles;
 import java.util.ArrayList;
 import java.util.List;
 
-class CarContainer {
+class CarContainer extends Storage{
 
     private int maxSize;
     private final List<Car> cars = new ArrayList<>();
-    private IVehicle self;
+    //private IVehicle self;
 
 
     /**
@@ -17,7 +17,7 @@ class CarContainer {
      */
     CarContainer(int maxSize, Vehicle self){
         this.maxSize = maxSize;
-        this.self = self;
+        owner = self;
     }
 
     /**
@@ -49,8 +49,8 @@ class CarContainer {
      * @param c the car that will be added
      */
     void add(Car c){
-        if(cars.size() < maxSize && c != self){
-            c.pointMove(self.getX(), self.getY());
+        if(cars.size() < maxSize && c != owner){
+            c.pointMove(owner.getX(), owner.getY());
             cars.add(c);
         }
     }
@@ -61,7 +61,7 @@ class CarContainer {
      */
     private Car remove(int internalIndex){
         Car c = cars.remove(internalIndex);
-        c.pointMove(self.getX() + 2, self.getY() + 2);
+        c.pointMove(owner.getX() + 2, owner.getY() + 2);
         return c;
     }
 
@@ -75,7 +75,7 @@ class CarContainer {
 
     void updatePosition(){
         for (Car c : cars) {
-            c.pointMove(self.getX(), self.getY());
+            c.pointMove(owner.getX(), owner.getY());
         }
     }
 }

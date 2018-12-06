@@ -13,12 +13,12 @@ public abstract class Truck extends Car {
     }
 
     /**
-     *  {@inheritDoc}
-     *  Furthermore, a raised flatbed will hinder the Model.Vehicles.Truck from moving.
+     * {@inheritDoc}
+     * Furthermore, a raised flatbed will hinder the Model.Vehicles.Truck from moving.
      */
     @Override
-    public void move(){
-        if(flatbed.getFlatbedAngle() == 0){
+    public void move() {
+        if (flatbed.getFlatbedAngle() == 0) {
             super.move();
         }
     }
@@ -31,23 +31,39 @@ public abstract class Truck extends Car {
 
     /**
      * Gets the current angles of the flatbed of the object
+     *
      * @return the angle of the flatbed
      */
-    public double getFlatbedAngle(){
+    public double getFlatbedAngle() {
         return flatbed.getFlatbedAngle();
     }
 
     /**
      * Returns whether the flatbed is open (usable) or closed (not usable).
+     *
      * @return a boolean of true (open) or false (closed)
      */
-    public boolean getFlatbedOpen(){
+    public boolean getFlatbedOpen() {
         return flatbed.getFlatbedOpen();
     }
 
 
-    protected Flatbed getFlatbed(){
+    protected Flatbed getFlatbed() {
         return flatbed;
+    }
+
+    public void raiseFlatbed(double amount) {
+        if (getCurrentSpeed() == 0) {
+            flatbed.raiseFlatbed(amount);
+        }
+    }
+
+    public void lowerFlatbed(double amount) {
+        if (getCurrentSpeed() == 0) {
+            flatbed.lowerFlatbed(amount);
+
+        }
+
     }
 }
 

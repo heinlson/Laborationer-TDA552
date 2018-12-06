@@ -1,18 +1,18 @@
 package Model.Vehicles;
 
-class Flatbed {
+class Flatbed extends Storage{
 
 
     private double flatbedAngle;
     private boolean flatbedOpen = false;
-    private final IVehicle self;
+    //private final IVehicle self;
 
     /**
      * A flatbed attached to a vehicle, can be raised or lowered
      * @param self the vehicle that has said flatbed
      */
     Flatbed(IVehicle self){
-        this.self = self;
+        owner = self;
     }
 
     /**
@@ -37,7 +37,7 @@ class Flatbed {
      * @param amount number of degrees to raise the flatbed
      */
     void raiseFlatbed(double amount){
-        if(self.getCurrentSpeed() == 0){
+        if(owner.getCurrentSpeed() == 0){
             if(amount + flatbedAngle <= 70 && amount > 0){
                 flatbedAngle += amount;
             }
@@ -45,11 +45,9 @@ class Flatbed {
                 flatbedAngle = 70;
             }
         }
-
         if(flatbedAngle > 0){
             flatbedOpen = true;
         }
-
     }
 
 
@@ -58,7 +56,7 @@ class Flatbed {
      * @param amount number of degrees to lower the flatbed
      */
     void lowerFlatbed(double amount){
-        if(self.getCurrentSpeed() == 0){
+        if(owner.getCurrentSpeed() == 0){
             if(flatbedAngle - amount >= 0 && amount > 0){
                 flatbedAngle -= amount;
             }
@@ -66,11 +64,8 @@ class Flatbed {
                 flatbedAngle = 0;
             }
         }
-
         if(flatbedAngle == 0){
             flatbedOpen = false;
         }
-
     }
-
 }

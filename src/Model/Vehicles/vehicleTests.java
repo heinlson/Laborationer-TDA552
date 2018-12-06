@@ -1,10 +1,10 @@
 package Model.Vehicles;
 
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
 
 import java.awt.*;
 
-import static org.junit.jupiter.api.Assertions.*;
+//import static org.junit.jupiter.api.Assertions.*;
 
 class vehicleTests {
 
@@ -14,6 +14,7 @@ class vehicleTests {
     private CarTransport ct = new CarTransport(1);
     private CarFerry cf = new CarFerry(3, 2, "Ferry");
 
+    /*
     @Test
     void getNrDoors(){
         assertEquals(4, c.getNrDoors());
@@ -258,4 +259,5 @@ class vehicleTests {
 //    void minMax(){
 //        assertEquals( 3, minMax(1, 2, 3));
 //    }
+*/
 }
