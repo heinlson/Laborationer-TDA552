@@ -3,11 +3,11 @@ package Model.Vehicles;
 import java.util.ArrayList;
 import java.util.List;
 
-class CarContainer<T extends Car> {
+class CarContainer {
 
     private int maxSize;
-    private final List<T> cars = new ArrayList<>();
-    private Vehicle self;
+    private final List<Car> cars = new ArrayList<>();
+    private IVehicle self;
 
 
     /**
@@ -40,7 +40,7 @@ class CarContainer<T extends Car> {
      * Gets the list containing cars stored in the container
      * @return a "list" containing the cars in the container
      */
-    List<T> getCars() {
+    List<Car> getCars() {
         return cars;
     }
 
@@ -48,7 +48,7 @@ class CarContainer<T extends Car> {
      * Adds the car to list in the last place, updates the position of the car
      * @param c the car that will be added
      */
-    void add(T c){
+    void add(Car c){
         if(cars.size() < maxSize && c != self){
             c.pointMove(self.getX(), self.getY());
             cars.add(c);
@@ -59,17 +59,17 @@ class CarContainer<T extends Car> {
      * Removes the car at the last place of the list and moves it 2 meters from the vehicle
      * @return the car that was removed
      */
-    private T remove(int internalIndex){
-        T c = cars.remove(internalIndex);
+    private Car remove(int internalIndex){
+        Car c = cars.remove(internalIndex);
         c.pointMove(self.getX() + 2, self.getY() + 2);
         return c;
     }
 
-    T removeFirst(){
+    Car removeFirst(){
         return remove(0);
     }
 
-    T removeLast(){
+    Car removeLast(){
         return remove(cars.size() - 1);
     }
 

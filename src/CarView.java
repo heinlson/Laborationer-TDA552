@@ -1,4 +1,6 @@
 
+import Model.CarObserver;
+
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
@@ -14,7 +16,7 @@ import java.awt.event.ActionListener;
  * TODO: Write more actionListeners and wire the rest of the buttons
  **/
 
-public class CarView extends JFrame{
+public class CarView extends JFrame implements CarObserver {
     private static final int X = 1400;
     private static final int Y = 1100;
 
@@ -44,22 +46,13 @@ public class CarView extends JFrame{
     // Constructor
     public CarView(String framename, CarController cc){
         this.carC = cc;
-        drawPanel = new DrawPanel(X, Y-300, carC.model);
+        drawPanel = new DrawPanel(X, Y-300, carC.getModel());
         initComponents(framename);
 
     }
 
-    static int X() {
-        return X;
-    }
-
-    static int Y() {
-        return Y;
-    }
-
 
     // Sets everything in place and fits everything
-    // TODO: Take a good look and make sure you understand how these methods and components work
     private void initComponents(String title) {
 
         this.setTitle(title);
@@ -111,6 +104,9 @@ public class CarView extends JFrame{
         this.add(stopButton);
 
 
+        // TODO Efter att ha flyttat beteenden till model, ta bort association
+        // TODO till controller här nedanför
+
         gasButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -118,6 +114,7 @@ public class CarView extends JFrame{
             }
         });
 
+        // model.actionList.add(Brake)
         brakeButton.addActionListener(/* ActionEvent */ e -> carC.brake(gasAmount));
 
         turboOnButton.addActionListener(e -> carC.turboOn());
@@ -144,5 +141,13 @@ public class CarView extends JFrame{
         this.setVisible(true);
         // Make sure the frame exits when "x" is pressed
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+
+    /**
+     * Repaint the view if the model changes
+     */
+    @Override
+    public void actOnModelChange() {
+        drawPanel.repaint();
     }
 }

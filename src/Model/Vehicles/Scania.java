@@ -14,11 +14,11 @@ public class Scania extends Truck {
 
 
     /**
-     * Creates a Model.Vehicles.Scania with a given color
-     * @param c the color of the Model.Vehicles.Scania
+     * Creates a Scania with a given color
+     * @param c the color of the Scania
      */
     Scania(Color c){
-        super(2, 150, c, "Model.Vehicles.Scania");
+        super(2, 150, c, "Scania");
     }
 
 

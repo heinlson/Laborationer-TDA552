@@ -21,11 +21,36 @@ public class CarController {
     private Timer timer = new Timer(delay, new TimerListener());
 
     // The frame that represents this instance View of the MVC pattern
-    CarView frame;
-    CarModel model;
+    private CarView frame;
+    private CarModel model;
+
+
+    CarController(CarModel model){
+        this.model = model;
+        // TODO Remove the association from view to controller
+        // Start a new view and send a reference of self
+        frame = new CarView("CarSim 1.0", this);
+
+        // Potentially add new Constructor whom can take in a JFrame
+
+    }
+
+//    CarController(){
+//        this(new CarModel());
+//    }
 
 
     //methods:
+
+
+    public CarView getFrame() {
+        return frame;
+    }
+
+    public CarModel getModel() {
+        return model;
+    }
+
     void startTimer(){
         timer.start();
     }
@@ -36,25 +61,12 @@ public class CarController {
      * */
     private class TimerListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            for (IVehicle car : model.getCars()) {
-                car.move();
-                checkEdgeCollision(car);
-            }
-            frame.drawPanel.repaint();
+            model.updateVehicles(frame.getX(), frame.getY());
         }
     }
 
-    /**
-     * Check if car is outside of the bounds of the window, reverse it if so-
-     * @param car the car in question
-     */
-    private void checkEdgeCollision(IVehicle car){
-        if (car.getX() < 0 || car.getX() > CarView.X() ||
-            car.getY() < 0 || car.getY() > CarView.Y()) {
-            car.turnRight();
-            car.turnRight();
-        }
-    }
+    // TODO Flytta nedanstående metoder till model, och refakturera så att
+    // TODO koden gör detsamma som just nu (d.v.s ändra i view)
 
     // Calls the gas method for each car once
     void gas(int amount) {

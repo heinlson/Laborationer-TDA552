@@ -6,7 +6,7 @@ import java.util.List;
 
 class CarFerry extends Vehicle{
 
-    private final List<CarContainer<Car>> carFiles = new ArrayList<>();
+    private final List<CarContainer> carFiles = new ArrayList<>();
 
     /**
      * A ferry that can carry cars, has multiple files to store cars in
@@ -19,7 +19,7 @@ class CarFerry extends Vehicle{
 
 
         for(int i = 0; i < noOfFiles; i++){
-            carFiles.add(new CarContainer<>(storageSize, this));
+            carFiles.add(new CarContainer(storageSize, this));
         }
     }
 

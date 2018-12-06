@@ -38,7 +38,7 @@ public abstract class Truck extends Car {
     }
 
     /**
-     * Returns whether the flatbed is open (usable) or closed (not useable).
+     * Returns whether the flatbed is open (usable) or closed (not usable).
      * @return a boolean of true (open) or false (closed)
      */
     public boolean getFlatbedOpen(){

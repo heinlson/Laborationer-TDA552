@@ -1,8 +1,5 @@
 package Model.Vehicles;
 
-/**
- * Interface for an object that can be moved and rotated
- */
 public interface IVehicle {
     void move();
     void turnLeft();
@@ -23,7 +20,4 @@ public interface IVehicle {
     void stopEngine();
 
 
-
-//    void setX(double x);
-//    void setY(double y);
 }

@@ -3,7 +3,7 @@ package Model.Vehicles;
 import java.awt.*;
 
 /**
- * A subclass of Model.Vehicles.Car
+ * A subclass of Car
  * Contains an internal calculation of its speed factor using a class specific trim factor
  */
 class Volvo240 extends Car{
@@ -23,7 +23,7 @@ class Volvo240 extends Car{
      * @param c the color of the Volvo
      */
     Volvo240(Color c){
-        super(4, 100, c, "Model.Vehicles.Volvo240");
+        super(4, 100, c, "Volvo240");
         stopEngine();
     }
 

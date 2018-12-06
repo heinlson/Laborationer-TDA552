@@ -7,7 +7,7 @@ import java.awt.image.BufferedImage;
 
 // This panel represent the animated part of the view with the car images.
 
-public class DrawPanel extends JPanel{
+public class DrawPanel extends JPanel {
 
     private final CarModel model;
 
@@ -16,7 +16,7 @@ public class DrawPanel extends JPanel{
         this.setDoubleBuffered(true);
         this.setPreferredSize(new Dimension(x, y));
         this.setBackground(Color.green);
-
+        this.model = model;
 
         // You can remove the "src\\pics" part if running outside of IntelliJ and
         // everything is in the same main folder.
@@ -24,7 +24,7 @@ public class DrawPanel extends JPanel{
         // if you are starting in IntelliJ.
         // Linux users need to modify \ to / in path string
 
-        this.model = model;
+
     }
 
     // This method is called each time the panel updates/refreshes/repaints itself
