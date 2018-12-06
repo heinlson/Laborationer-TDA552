@@ -1,5 +1,6 @@
-import Vehicles.IVehicle;
-import Vehicles.VehicleFactory;
+import Model.CarModel;
+import Model.Vehicles.IVehicle;
+import Model.Vehicles.VehicleFactory;
 
 public abstract class CarApp {
     // Abstract, I dunno. Obviously, one should't instantiate this class.

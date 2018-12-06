@@ -1,9 +1,9 @@
-package Vehicles;
+package Model.Vehicles;
 
 import java.awt.*;
 
 /**
- * A subclass of Vehicles.Car
+ * A subclass of Model.Vehicles.Car
  * Contains turbo boolean and an internal calculation of its speed factor used in moving
  */
 public class Saab95 extends Car {
@@ -25,7 +25,7 @@ public class Saab95 extends Car {
      * @param c the color of the Saab
      */
     Saab95(Color c) {
-        super(2, 125, c, "Vehicles.Saab95");
+        super(2, 125, c, "Model.Vehicles.Saab95");
         setTurboOff();
         stopEngine();
     }

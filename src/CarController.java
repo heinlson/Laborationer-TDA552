@@ -1,4 +1,5 @@
-import Vehicles.*;
+import Model.Vehicles.*;
+import Model.*;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

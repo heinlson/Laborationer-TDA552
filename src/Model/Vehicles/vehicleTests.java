@@ -1,4 +1,4 @@
-package Vehicles;
+package Model.Vehicles;
 
 import org.junit.jupiter.api.Test;
 

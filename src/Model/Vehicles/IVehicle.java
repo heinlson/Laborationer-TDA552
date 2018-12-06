@@ -1,4 +1,4 @@
-package Vehicles;
+package Model.Vehicles;
 
 /**
  * Interface for an object that can be moved and rotated

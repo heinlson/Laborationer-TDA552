@@ -1,4 +1,4 @@
-package Vehicles;
+package Model.Vehicles;
 
 import java.awt.*;
 
@@ -14,7 +14,7 @@ public abstract class Truck extends Car {
 
     /**
      *  {@inheritDoc}
-     *  Furthermore, a raised flatbed will hinder the Vehicles.Truck from moving.
+     *  Furthermore, a raised flatbed will hinder the Model.Vehicles.Truck from moving.
      */
     @Override
     public void move(){

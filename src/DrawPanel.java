@@ -1,4 +1,5 @@
-import Vehicles.IVehicle;
+import Model.CarModel;
+import Model.Vehicles.IVehicle;
 
 import javax.swing.*;
 import java.awt.*;
