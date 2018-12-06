@@ -2,7 +2,7 @@ package Vehicles;
 
 import java.awt.*;
 
-public class CarTransport extends Truck {
+class CarTransport extends Truck {
 
 
     private final CarContainer<Car> carStorage;
@@ -12,7 +12,7 @@ public class CarTransport extends Truck {
      * @param c the color of the car
      * @param maxSize the max amount of carStorage in the car transport
      */
-    public CarTransport(Color c, int maxSize) {
+    CarTransport(Color c, int maxSize) {
         super(2, 200, c, "Vehicles.Car transport");
         carStorage = new CarContainer<Car>(maxSize, this);
     }
@@ -21,7 +21,7 @@ public class CarTransport extends Truck {
      * Creates a car transport with the given max number of carStorage
      * @param maxSize the max amount of carStorage in the car transport
      */
-    public CarTransport(int maxSize) {
+    CarTransport(int maxSize) {
         this(Color.orange, maxSize);
     }
 

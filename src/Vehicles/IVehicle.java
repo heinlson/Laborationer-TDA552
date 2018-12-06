@@ -11,6 +11,18 @@ public interface IVehicle {
 
     int getX();
     int getY();
+    double getCurrentSpeed();
+
+    void pointMove(int x, int y);
+
+
+    void gas(double amount);
+    void brake(double amount);
+
+    void startEngine();
+    void stopEngine();
+
+
 
 //    void setX(double x);
 //    void setY(double y);

@@ -5,6 +5,8 @@ import java.awt.*;
 public abstract class Truck extends Car {
 
     private final Flatbed flatbed = new Flatbed(this);
+    // Use template pattern to make sure flatbed can not be changed when truck has a speed.
+    // Ensure that this applies for all subclasses of Truck
 
     protected Truck(int nrDoors, double enginePower, Color color, String modelName) {
         super(nrDoors, enginePower, color, modelName);

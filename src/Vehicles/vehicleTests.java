@@ -122,23 +122,6 @@ class vehicleTests {
          assertFalse(s.isTurboOn());
      }
 
-//    @Test
-//    void speedFactor() {
-//        Vehicles.Volvo240 v = new Vehicles.Volvo240();
-//        assertEquals(1.25, v.speedFactor());
-//    }
-
-//    @Test
-//    void gas() {
-//        Vehicles.Car c = new Vehicles.Volvo240();
-//        c.gas(1);
-//        assertEquals(1.25, c.getCurrentSpeed());
-//    }
-
-//    @Test
-//    void brake() {
-//    }
-
     @Test
     void move() {
         Car c = new Volvo240();

@@ -4,7 +4,7 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CarFerry extends Vehicle{
+class CarFerry extends Vehicle{
 
     private final List<CarContainer<Car>> carFiles = new ArrayList<>();
 
@@ -14,7 +14,7 @@ public class CarFerry extends Vehicle{
      * @param noOfFiles the number of car files on the Ferry
      * @param modelName the model of the Ferry
      */
-    public CarFerry(int storageSize, int noOfFiles, String modelName){
+    CarFerry(int storageSize, int noOfFiles, String modelName){
         super(225, Color.orange, modelName);
 
 

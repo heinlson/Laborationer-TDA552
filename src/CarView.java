@@ -15,14 +15,14 @@ import java.awt.event.ActionListener;
  **/
 
 public class CarView extends JFrame{
-    private static final int X = 1800;
-    private static final int Y = 1800;
+    private static final int X = 1400;
+    private static final int Y = 1100;
 
     // The controller member
     CarController carC;
 
 
-    DrawPanel drawPanel = new DrawPanel(X, Y-240);
+    DrawPanel drawPanel;
 
     JPanel controlPanel = new JPanel();
 
@@ -44,7 +44,9 @@ public class CarView extends JFrame{
     // Constructor
     public CarView(String framename, CarController cc){
         this.carC = cc;
+        drawPanel = new DrawPanel(X, Y-300, carC.model);
         initComponents(framename);
+
     }
 
     static int X() {

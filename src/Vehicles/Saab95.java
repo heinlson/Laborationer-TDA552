@@ -14,7 +14,7 @@ public class Saab95 extends Car {
     /**
      * Empty constructor
      */
-    public Saab95() {
+    Saab95() {
         this(Color.red);
         setTurboOff();
         stopEngine();
@@ -24,7 +24,7 @@ public class Saab95 extends Car {
      * Creates a Saab with a given color
      * @param c the color of the Saab
      */
-    public Saab95(Color c) {
+    Saab95(Color c) {
         super(2, 125, c, "Vehicles.Saab95");
         setTurboOff();
         stopEngine();

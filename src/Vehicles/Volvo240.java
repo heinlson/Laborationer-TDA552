@@ -6,14 +6,14 @@ import java.awt.*;
  * A subclass of Vehicles.Car
  * Contains an internal calculation of its speed factor using a class specific trim factor
  */
-public class Volvo240 extends Car{
+class Volvo240 extends Car{
 
     private final static double trimFactor = 1.25;
 
     /**
      * Empty constructor
      */
-    public Volvo240(){
+    Volvo240(){
         this(Color.black);
         stopEngine();
     }
@@ -22,7 +22,7 @@ public class Volvo240 extends Car{
      * Creates a Volvo with a given color
      * @param c the color of the Volvo
      */
-    public Volvo240(Color c){
+    Volvo240(Color c){
         super(4, 100, c, "Vehicles.Volvo240");
         stopEngine();
     }

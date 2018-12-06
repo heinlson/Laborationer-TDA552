@@ -1,12 +1,8 @@
-import Vehicles.Car;
-import Vehicles.Saab95;
-import Vehicles.Scania;
-import Vehicles.Volvo240;
+import Vehicles.*;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
 
 /*
  * This class represents the Controller part in the MVC pattern.
@@ -25,52 +21,33 @@ public class CarController {
 
     // The frame that represents this instance View of the MVC pattern
     CarView frame;
-    // A list of cars, modify if needed
-    ArrayList<Car> cars = new ArrayList<>();
+    CarModel model;
+
 
     //methods:
-
-    public static void main(String[] args) {
-        // Instance of this class
-        CarController cc = new CarController();
-
-        cc.cars.add(new Volvo240());
-
-        Saab95 saab = new Saab95();
-        saab.pointMove(0, 100);
-        cc.cars.add(saab);
-
-        Scania scania = new Scania();
-        scania.pointMove(0, 200);
-        cc.cars.add(scania);
-
-        // Start a new view and send a reference of self
-        cc.frame = new CarView("CarSim 1.0", cc);
-
-        // Start the timer
-        cc.timer.start();
+    void startTimer(){
+        timer.start();
     }
+
 
     /* Each step the TimerListener moves all the cars in the list and tells the
      * view to update its images. Change this method to your needs.
      * */
     private class TimerListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            for (Car car : cars) {
+            for (IVehicle car : model.getCars()) {
                 car.move();
                 checkEdgeCollision(car);
-//                int x = Math.round(car.getX());
-//                int y = Math.round(car.getY());
-                frame.drawPanel.mapIt(car);
-                // repaint() calls
-                // the paintComponent method of the panel
             }
             frame.drawPanel.repaint();
         }
     }
 
-
-    private void checkEdgeCollision(Car car){
+    /**
+     * Check if car is outside of the bounds of the window, reverse it if so-
+     * @param car the car in question
+     */
+    private void checkEdgeCollision(IVehicle car){
         if (car.getX() < 0 || car.getX() > CarView.X() ||
             car.getY() < 0 || car.getY() > CarView.Y()) {
             car.turnRight();
@@ -81,7 +58,7 @@ public class CarController {
     // Calls the gas method for each car once
     void gas(int amount) {
         double percentage = ((double) amount) / 100;
-        for (Car car : cars) {
+        for (IVehicle car : model.getCars()) {
             car.gas(percentage);
         }
     }
@@ -89,14 +66,14 @@ public class CarController {
     // Calls the brake method for each car once
     void brake(int amount) {
         double percentage = ((double) amount) / 100;
-        for (Car car : cars) {
+        for (IVehicle car : model.getCars()) {
             car.brake(percentage);
         }
     }
 
     // Turbo on for Saab
     void turboOn(){
-        for(Car c : cars) {
+        for(IVehicle c : model.getCars()) {
             if (c instanceof Saab95) {
                 ((Saab95) c).setTurboOn();
             }
@@ -105,25 +82,29 @@ public class CarController {
 
     // Turbo on for Saab
     void turboOff(){
-        for(Car c : cars) {
+        for(IVehicle c : model.getCars()) {
             if (c instanceof Saab95) {
                 ((Saab95) c).setTurboOff();
             }
         }
     }
 
-
+    /**
+     *  Raise flatbed of all Scania cars
+     */
     void flatbedUp(){
-        for(Car c : cars) {
+        for(IVehicle c : model.getCars()) {
             if (c instanceof Scania) {
                 ((Scania) c).raiseFlatbed(40);
             }
         }
     }
 
-
+    /**
+     * Lower flatbed of all Scania cars
+     */
     void flatbedDown(){
-        for(Car c : cars) {
+        for(IVehicle c : model.getCars()) {
             if (c instanceof Scania) {
                 ((Scania) c).lowerFlatbed(40);
             }
@@ -131,16 +112,14 @@ public class CarController {
     }
 
     void startAllEngines() {
-        for (Car c : cars) {
+        for (IVehicle c : model.getCars()) {
             c.startEngine();
         }
     }
 
     void stopAllEngines() {
-        for (Car c : cars) {
+        for (IVehicle c : model.getCars()) {
             c.stopEngine();
         }
     }
-
-
 }

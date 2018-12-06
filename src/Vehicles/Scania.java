@@ -8,7 +8,7 @@ public class Scania extends Truck {
     /**
      * Empty constructor
      */
-    public Scania(){
+    Scania(){
         this(Color.white);
     }
 
@@ -17,7 +17,7 @@ public class Scania extends Truck {
      * Creates a Vehicles.Scania with a given color
      * @param c the color of the Vehicles.Scania
      */
-    public Scania(Color c){
+    Scania(Color c){
         super(2, 150, c, "Vehicles.Scania");
     }
 
