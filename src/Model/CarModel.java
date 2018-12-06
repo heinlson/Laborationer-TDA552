@@ -1,4 +1,6 @@
-import Vehicles.IVehicle;
+package Model;
+
+import Model.Vehicles.IVehicle;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -12,7 +14,7 @@ import java.util.Map;
 public class CarModel {
     private final Map<IVehicle, BufferedImage> vehicles = new HashMap<>();
 
-    List<IVehicle> getCars() {
+    public List<IVehicle> getCars() {
         return new ArrayList<>(vehicles.keySet());
     }
 
@@ -24,7 +26,7 @@ public class CarModel {
      * Add vehicle to hashMap and associate a vehicle with it's corresponding image
      * @param vehicle the vehicle to be bound to an image, most often sent via VehicleFactory
      */
-    void addCar(IVehicle vehicle){
+    public void addCar(IVehicle vehicle){
         BufferedImage image;
         try {
             image = ImageIO.read(
